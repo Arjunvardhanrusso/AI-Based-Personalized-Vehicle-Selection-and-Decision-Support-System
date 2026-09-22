@@ -8,6 +8,7 @@ import {
   Info
 } from 'lucide-react';
 import { VehicleImage } from './VehicleImage';
+import { useAuth } from '../context/AuthContext';
 
 interface VehicleCardProps {
   ranking?: VehicleRanking;
@@ -196,6 +197,7 @@ export const VehicleCard: React.FC<VehicleCardProps> = ({
   selectedLocation,
   selectedCity
 }) => {
+  const { user, isVehicleSaved, toggleSaveVehicle } = useAuth();
   const vehName = ranking?.name || vehicle?.name || 'Hyundai Creta';
   const brandName = ranking?.brand || vehicle?.brand || 'Hyundai';
   const fuel = ranking?.fuel_type || vehicle?.fuel_type || 'petrol';
@@ -234,14 +236,25 @@ export const VehicleCard: React.FC<VehicleCardProps> = ({
           #{rankIndex + 1} Match
         </div>
 
-        {/* Top Right Heart Favorite Button */}
+        {/* Top Right Heart Favorite / Garage Save Button */}
         <button
           type="button"
-          onClick={(e) => { e.stopPropagation(); onToggleCompare(vehId); }}
-          className="absolute top-3 right-3 text-viq-outline hover:text-red-400 p-1.5 rounded-full bg-viq-surface-container-lowest/80 backdrop-blur-md border border-white/10 transition-colors z-10"
-          title={isCompared ? 'Remove from favorites/compare' : 'Save vehicle'}
+          onClick={async (e) => {
+            e.stopPropagation();
+            if (user) {
+              try {
+                await toggleSaveVehicle(vehId);
+              } catch {
+                onToggleCompare(vehId);
+              }
+            } else {
+              onToggleCompare(vehId);
+            }
+          }}
+          className="absolute top-3 right-3 text-viq-outline hover:text-red-400 p-1.5 rounded-full bg-viq-surface-container-lowest/80 backdrop-blur-md border border-white/10 transition-colors z-10 cursor-pointer"
+          title={isVehicleSaved(vehId) || isCompared ? 'Saved in Garage / Benchmark' : 'Save to Garage'}
         >
-          <Heart className={`w-4 h-4 ${isCompared ? 'fill-red-500 text-red-500' : 'text-viq-outline'}`} />
+          <Heart className={`w-4 h-4 ${(isVehicleSaved(vehId) || isCompared) ? 'fill-red-500 text-red-500' : 'text-viq-outline'}`} />
         </button>
 
         {/* Studio Car Photo — Unclipped Studio Cutout with cascading fallbacks */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import type { SelectedLocation } from '../types';
+import { useAuth } from '../context/AuthContext';
 
 interface HeaderProps {
   selectedLocation: SelectedLocation;
@@ -9,12 +10,13 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ selectedLocation, onOpenSearch }) => {
   const location = useLocation();
+  const { user, savedVariantIds } = useAuth();
 
   const navLinks = [
     { path: '/discover', label: 'Discover', icon: 'tune' },
     { path: '/compare', label: 'Compare', icon: 'compare_arrows' },
-    { path: '/garage', label: 'Garage', icon: 'garage' },
-    { path: '/admin', label: 'Admin', icon: 'admin_panel_settings' },
+    { path: '/garage', label: `Garage${savedVariantIds.size > 0 ? ` (${savedVariantIds.size})` : ''}`, icon: 'garage' },
+    { path: '/admin', label: 'Admin', icon: 'admin_panel_settings', adminOnly: true },
   ];
 
   return (
@@ -38,6 +40,9 @@ export const Header: React.FC<HeaderProps> = ({ selectedLocation, onOpenSearch }
           </Link>
           <nav className="hidden xl:flex items-center gap-space-xs">
             {navLinks.map((link) => {
+              if (link.adminOnly && (!user || !user.is_admin)) {
+                return null;
+              }
               const isActive = location.pathname === link.path || (link.path === '/discover' && location.pathname === '/');
               return (
                 <Link
@@ -83,8 +88,19 @@ export const Header: React.FC<HeaderProps> = ({ selectedLocation, onOpenSearch }
             </span>
           </div>
 
-          <Link to="/auth" className="w-8 h-8 rounded-full bg-viq-primary flex items-center justify-center hover:bg-viq-primary-hover transition-colors">
-            <span className="material-symbols-outlined text-viq-on-primary text-[18px]">person</span>
+          <Link
+            to="/auth"
+            title={user ? `Signed in as ${user.email}` : 'Sign In'}
+            className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-viq-surface-container-low hover:bg-viq-surface-container border border-viq-outline-variant/30 transition-colors"
+          >
+            <div className="w-6 h-6 rounded-full bg-viq-primary flex items-center justify-center text-viq-on-primary text-xs font-bold font-mono">
+              {user ? user.email[0].toUpperCase() : <span className="material-symbols-outlined text-[14px]">person</span>}
+            </div>
+            {user && (
+              <span className="hidden sm:inline font-mono text-xs text-viq-on-surface max-w-[120px] truncate">
+                {user.email.split('@')[0]}
+              </span>
+            )}
           </Link>
         </div>
       </div>

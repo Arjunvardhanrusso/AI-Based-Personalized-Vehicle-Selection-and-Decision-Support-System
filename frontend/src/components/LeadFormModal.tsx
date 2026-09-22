@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { api } from '../services/api';
+import { apiCreateLead } from '../services/api';
 
 interface Props {
   variantId: string;
@@ -7,7 +7,7 @@ interface Props {
   onClose: () => void;
 }
 
-const LeadFormModal: React.FC<Props> = ({ variantId, isOpen, onClose }) => {
+export const LeadFormModal: React.FC<Props> = ({ variantId, isOpen, onClose }) => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
@@ -19,78 +19,87 @@ const LeadFormModal: React.FC<Props> = ({ variantId, isOpen, onClose }) => {
     e.preventDefault();
     setStatus('submitting');
     try {
-      await api.post('/api/leads', {
+      await apiCreateLead({
         vehicle_variant_id: variantId,
         name,
         phone,
-        message
+        message: message.trim() || undefined
       });
       setStatus('success');
       setTimeout(() => {
         onClose();
         setStatus('idle');
+        setName('');
+        setPhone('');
+        setMessage('');
       }, 2000);
-    } catch (err) {
+    } catch {
       setStatus('error');
     }
   };
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-viq-surface border border-viq-divider rounded-2xl p-6 w-full max-w-md shadow-2xl relative">
+      <div className="bg-viq-surface-container-high border border-viq-outline-variant/30 rounded-2xl p-6 w-full max-w-md shadow-2xl relative text-viq-on-surface">
         <button 
           onClick={onClose}
-          className="absolute top-4 right-4 text-viq-text-muted hover:text-white"
+          aria-label="Close"
+          className="absolute top-4 right-4 text-viq-on-surface-variant hover:text-viq-on-surface cursor-pointer"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
 
-        <h2 className="text-2xl font-bold text-viq-text mb-2">Contact Dealer</h2>
-        <p className="text-viq-text-muted mb-6">Get the best offers for this vehicle.</p>
+        <h2 className="text-2xl font-bold font-jakarta mb-2">Connect with Dealership</h2>
+        <p className="text-viq-on-surface-variant text-sm mb-6">
+          Request official verified on-road quote, test drive scheduling, and dealer allocation.
+        </p>
 
         {status === 'success' ? (
-          <div className="bg-green-500/20 text-green-400 p-4 rounded-lg text-center">
-            Successfully submitted! A dealer will contact you soon.
+          <div className="bg-emerald-500/20 text-emerald-400 p-4 rounded-lg text-center border border-emerald-500/30">
+            ✓ Callback requested! An authorized dealership coordinator will reach out shortly.
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm text-viq-text-muted mb-1">Name</label>
+              <label className="block text-xs font-mono uppercase tracking-wider text-viq-outline mb-1">Full Name</label>
               <input 
                 required
                 type="text"
+                placeholder="Enter your full name"
                 value={name} 
                 onChange={e => setName(e.target.value)}
-                className="bg-viq-bg border border-viq-divider text-viq-text rounded-md px-3 py-2 w-full"
+                className="bg-viq-surface-container-lowest border border-viq-outline-variant/30 text-viq-on-surface rounded-lg px-3 py-2 w-full focus:outline-none focus:border-viq-primary"
               />
             </div>
             <div>
-              <label className="block text-sm text-viq-text-muted mb-1">Phone</label>
+              <label className="block text-xs font-mono uppercase tracking-wider text-viq-outline mb-1">Contact Phone</label>
               <input 
                 required
                 type="tel"
+                placeholder="+91 98765 43210"
                 value={phone} 
                 onChange={e => setPhone(e.target.value)}
-                className="bg-viq-bg border border-viq-divider text-viq-text rounded-md px-3 py-2 w-full"
+                className="bg-viq-surface-container-lowest border border-viq-outline-variant/30 text-viq-on-surface rounded-lg px-3 py-2 w-full focus:outline-none focus:border-viq-primary"
               />
             </div>
             <div>
-              <label className="block text-sm text-viq-text-muted mb-1">Message (Optional)</label>
+              <label className="block text-xs font-mono uppercase tracking-wider text-viq-outline mb-1">Inquiry / Requirements (Optional)</label>
               <textarea 
+                placeholder="E.g., Preferred delivery date, trade-in exchange inquiry, test drive slot..."
                 value={message} 
                 onChange={e => setMessage(e.target.value)}
-                className="bg-viq-bg border border-viq-divider text-viq-text rounded-md px-3 py-2 w-full h-24"
+                className="bg-viq-surface-container-lowest border border-viq-outline-variant/30 text-viq-on-surface rounded-lg px-3 py-2 w-full h-24 focus:outline-none focus:border-viq-primary"
               />
             </div>
-            {status === 'error' && <p className="text-red-500 text-sm">Failed to submit lead. Please try again.</p>}
+            {status === 'error' && <p className="text-red-400 text-xs">Failed to transmit request. Please verify your phone number.</p>}
             <button 
               type="submit" 
               disabled={status === 'submitting'}
-              className="w-full bg-viq-primary px-4 py-2 rounded-md hover:bg-viq-primary-hover text-white font-medium disabled:opacity-50"
+              className="w-full bg-viq-primary px-4 py-2.5 rounded-lg hover:bg-viq-primary-hover text-viq-on-primary font-bold text-sm tracking-wide transition-colors disabled:opacity-50 cursor-pointer"
             >
-              {status === 'submitting' ? 'Submitting...' : 'Request Callback'}
+              {status === 'submitting' ? 'Submitting Request...' : 'Submit Callback Request'}
             </button>
           </form>
         )}

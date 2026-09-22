@@ -59,4 +59,7 @@ ENV/
 # Database
 *.sqlite3
 *.db
+*.db-shm
+*.db-wal
 vehicleiq.db
+

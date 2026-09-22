@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, useLocation, useNavigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { SubHeader } from './components/SubHeader';
 import { TelemetryHUD } from './components/TelemetryHUD';
@@ -13,18 +13,16 @@ import { DetailsTab } from './pages/DetailsTab';
 import { KnowledgeBaseTab } from './pages/KnowledgeBaseTab';
 import { CompareTab } from './pages/CompareTab';
 import { ReasoningTab } from './pages/ReasoningTab';
-import AuthPage from './pages/AuthPage';
-import GaragePage from './pages/GaragePage';
-import AdminDashboard from './pages/AdminDashboard';
-import { CompareTab } from './pages/CompareTab';
-import { ReasoningTab } from './pages/ReasoningTab';
+import { AuthPage } from './pages/AuthPage';
+import { GaragePage } from './pages/GaragePage';
+import { AdminDashboard } from './pages/AdminDashboard';
 
+import { AuthProvider } from './context/AuthContext';
 import type { UserProfile, VehicleRanking, Vehicle, RecommendationResponse, SelectedLocation } from './types';
 import { DEFAULT_LOCATION } from './types';
 import { fetchVehicles, getRecommendation } from './services/api';
 
 const INITIAL_PROFILE: UserProfile = {
-  // Questionnaire fields start empty so they aren't pre-selected
   first_time_owner: undefined,
   experience: undefined,
   driving_confidence: undefined,
@@ -56,15 +54,14 @@ const INITIAL_PROFILE: UserProfile = {
   priority_comfort: 0.8
 };
 
-export function App() {
+function AppContent() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const [activeTab, setActiveTab] = useState<'discover' | 'details' | 'compare' | 'reasoning' | 'knowledge' | 'auth' | 'garage' | 'admin'>('discover');
-
-  // Central location state — single source of truth for the entire app.
   const [selectedLocation, setSelectedLocation] = useState<SelectedLocation>(DEFAULT_LOCATION);
-
   const [selectedVehicleId, setSelectedVehicleId] = useState<string>('');
   const [compareSlots, setCompareSlots] = useState<string[]>([]);
-
   const [userProfile, setUserProfile] = useState<UserProfile>(INITIAL_PROFILE);
   const [rankings, setRankings] = useState<VehicleRanking[]>([]);
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
@@ -81,6 +78,41 @@ export function App() {
     `[${new Date().toLocaleTimeString()}] GEO_INIT: Location set to ${DEFAULT_LOCATION.city} (${DEFAULT_LOCATION.code}).`
   ]);
 
+  // Sync URL path with active tab
+  useEffect(() => {
+    const path = location.pathname.replace('/', '').toLowerCase();
+    if (path === '' || path === 'discover') {
+      setActiveTab('discover');
+    } else if (path === 'compare') {
+      setActiveTab('compare');
+    } else if (path === 'garage') {
+      setActiveTab('garage');
+    } else if (path === 'admin') {
+      setActiveTab('admin');
+    } else if (path === 'auth') {
+      setActiveTab('auth');
+    } else if (path === 'knowledge') {
+      setActiveTab('knowledge');
+    } else if (path === 'reasoning') {
+      setActiveTab('reasoning');
+    }
+  }, [location.pathname]);
+
+  const handleTabChange = (tab: string) => {
+    const validTabs: Array<'discover' | 'details' | 'compare' | 'reasoning' | 'knowledge' | 'auth' | 'garage' | 'admin'> = [
+      'discover', 'details', 'compare', 'reasoning', 'knowledge', 'auth', 'garage', 'admin'
+    ];
+    const target = validTabs.includes(tab as any) ? (tab as any) : 'discover';
+    setActiveTab(target);
+    if (target === 'discover') navigate('/discover');
+    else if (target === 'compare') navigate('/compare');
+    else if (target === 'garage') navigate('/garage');
+    else if (target === 'admin') navigate('/admin');
+    else if (target === 'auth') navigate('/auth');
+    else if (target === 'knowledge') navigate('/knowledge');
+    else if (target === 'reasoning') navigate('/reasoning');
+  };
+
   const addTelemetryLog = useCallback((msg: string) => {
     const timeStr = `[${new Date().toLocaleTimeString()}] `;
     setTelemetryLogs(prev => [...prev.slice(-35), timeStr + msg]);
@@ -91,7 +123,7 @@ export function App() {
     addTelemetryLog(`GEO_CHANGE: Location updated to ${loc.city} (${loc.code})`);
   }, [addTelemetryLog]);
 
-  // Handle Ctrl+K / Cmd+K and custom search trigger events
+  // Global hotkeys
   useEffect(() => {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
@@ -126,12 +158,10 @@ export function App() {
     loadInitialData();
   }, [addTelemetryLog]);
 
-  // Execute DSS Multi-Attribute Recommendation Calculation
   const runRecommendationInference = useCallback(async () => {
     setLoading(true);
     addTelemetryLog('INFERENCE_START: Executing forward-chaining & fuzzy reasoning pipeline...');
     try {
-      // Include location in the profile sent to the recommendation engine
       const profileWithLocation: UserProfile = {
         ...userProfile,
         state: selectedLocation.state,
@@ -143,14 +173,11 @@ export function App() {
         addTelemetryLog(`INFERENCE_COMPLETE: ${response.vehicle_rankings.length} vehicles scored.`);
       }
     } catch {
-      addTelemetryLog('WARN: Backend inference offline; using cached rank vector.');
+      addTelemetryLog('WARN: Backend inference error; using cached rankings.');
     } finally {
       setLoading(false);
     }
   }, [userProfile, selectedLocation, addTelemetryLog]);
-
-    // Auto-trigger on mount is removed.
-    // Explicit triggers will call runRecommendationInference via onComplete and onRecalculate.
 
   const handleInspectVehicle = (vehId: string) => {
     setSelectedVehicleId(vehId);
@@ -176,105 +203,137 @@ export function App() {
   };
 
   return (
-    <Router>
-      <div className="min-h-screen bg-viq-background text-viq-on-surface flex flex-col font-sans selection:bg-viq-primary-container/20 selection:text-viq-primary antialiased">
-        <Header
+    <div className="min-h-screen bg-viq-background text-viq-on-surface flex flex-col font-sans selection:bg-viq-primary-container/20 selection:text-viq-primary antialiased">
+      <Header
+        selectedLocation={selectedLocation}
+        onOpenSearch={() => setIsCommandPaletteOpen(true)}
+      />
+
+      <div className="pt-20">
+        <SubHeader
+          activeTab={activeTab}
+          setActiveTab={handleTabChange}
           selectedLocation={selectedLocation}
-          onOpenSearch={() => setIsCommandPaletteOpen(true)}
+          setSelectedLocation={handleSetLocation}
+          telemetryOpen={isTelemetryOpen}
+          setTelemetryOpen={setIsTelemetryOpen}
+          demoMode={demoMode}
+          setDemoMode={(demo) => {
+            setDemoMode(demo);
+            addTelemetryLog(`DEMO_MODE: Set to ${demo ? 'ACTIVE' : 'INACTIVE'}`);
+          }}
+          onOpenQuestionnaire={() => setIsQuestionnaireOpen(true)}
         />
-
-        <div className="pt-20">
-          <SubHeader
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-            selectedLocation={selectedLocation}
-            setSelectedLocation={handleSetLocation}
-            telemetryOpen={isTelemetryOpen}
-            setTelemetryOpen={setIsTelemetryOpen}
-            demoMode={demoMode}
-            setDemoMode={(demo) => {
-              setDemoMode(demo);
-              addTelemetryLog(`DEMO_MODE: Set to ${demo ? 'ACTIVE' : 'INACTIVE'}`);
-            }}
-            onOpenQuestionnaire={() => setIsQuestionnaireOpen(true)}
-          />
-        </div>
-
-        <main className="flex-1 w-full max-w-[1600px] mx-auto">
-          {activeTab === 'discover' && (
-            <DiscoverTab
-              rankings={rankings}
-              vehicles={vehicles}
-              userProfile={userProfile}
-              setUserProfile={setUserProfile}
-              onInspectVehicle={handleInspectVehicle}
-              onToggleCompare={handleToggleCompare}
-              compareSlots={compareSlots}
-              selectedLocation={selectedLocation}
-              demoMode={demoMode}
-              onOpenQuestionnaire={() => setIsQuestionnaireOpen(true)}
-              onLogTelemetry={addTelemetryLog}
-              loading={loading}
-              onRecalculate={runRecommendationInference}
-            />
-          )}
-
-          {activeTab === 'details' && (
-            <DetailsTab
-              vehicleId={selectedVehicleId}
-              vehicles={vehicles}
-              rankings={rankings}
-              selectedLocation={selectedLocation}
-              onBackToDiscover={() => setActiveTab('discover')}
-              onLogTelemetry={addTelemetryLog}
-            />
-          )}
-
-          {activeTab === 'compare' && (
-            <CompareTab
-              compareSlots={compareSlots}
-              vehicles={vehicles}
-              rankings={rankings}
-              onRemoveSlot={(id) => setCompareSlots(prev => prev.filter(s => s !== id))}
-              onClearAll={() => {
-                setCompareSlots([]);
-                addTelemetryLog('COMPARE: Benchmark slots cleared.');
-              }}
-              onInspectVehicle={handleInspectVehicle}
-              selectedLocation={selectedLocation}
-            />
-          )}
-
-          {activeTab === 'reasoning' && (
-            <ReasoningTab onLogTelemetry={addTelemetryLog} />
-          )}
-        </main>
-
-        <TelemetryHUD
-          isOpen={isTelemetryOpen}
-          onClose={() => setIsTelemetryOpen(false)}
-          logs={telemetryLogs}
-          onClearLogs={() => setTelemetryLogs([])}
-        />
-
-        <CommandPalette
-          isOpen={isCommandPaletteOpen}
-          onClose={() => setIsCommandPaletteOpen(false)}
-          onNavigate={(tab) => setActiveTab(tab)}
-          onInspectVehicle={handleInspectVehicle}
-        />
-
-        <QuestionnaireModal
-          isOpen={isQuestionnaireOpen}
-          onClose={() => setIsQuestionnaireOpen(false)}
-          userProfile={userProfile}
-          setUserProfile={setUserProfile}
-          onComplete={runRecommendationInference}
-          onLogTelemetry={addTelemetryLog}
-        />
-
-        <Footer onNavigate={(tab) => setActiveTab(tab)} />
       </div>
+
+      <main className="flex-1 w-full max-w-[1600px] mx-auto">
+        {activeTab === 'discover' && (
+          <DiscoverTab
+            rankings={rankings}
+            vehicles={vehicles}
+            userProfile={userProfile}
+            setUserProfile={setUserProfile}
+            onInspectVehicle={handleInspectVehicle}
+            onToggleCompare={handleToggleCompare}
+            compareSlots={compareSlots}
+            selectedLocation={selectedLocation}
+            demoMode={demoMode}
+            onOpenQuestionnaire={() => setIsQuestionnaireOpen(true)}
+            onLogTelemetry={addTelemetryLog}
+            loading={loading}
+            onRecalculate={runRecommendationInference}
+          />
+        )}
+
+        {activeTab === 'details' && (
+          <DetailsTab
+            vehicleId={selectedVehicleId}
+            vehicles={vehicles}
+            rankings={rankings}
+            selectedLocation={selectedLocation}
+            onBackToDiscover={() => handleTabChange('discover')}
+            onLogTelemetry={addTelemetryLog}
+          />
+        )}
+
+        {activeTab === 'compare' && (
+          <CompareTab
+            compareSlots={compareSlots}
+            vehicles={vehicles}
+            rankings={rankings}
+            onRemoveSlot={(id) => setCompareSlots(prev => prev.filter(s => s !== id))}
+            onClearAll={() => {
+              setCompareSlots([]);
+              addTelemetryLog('COMPARE: Benchmark slots cleared.');
+            }}
+            onInspectVehicle={handleInspectVehicle}
+            selectedLocation={selectedLocation}
+          />
+        )}
+
+        {activeTab === 'reasoning' && (
+          <ReasoningTab onLogTelemetry={addTelemetryLog} />
+        )}
+
+        {activeTab === 'knowledge' && (
+          <KnowledgeBaseTab onLogTelemetry={addTelemetryLog} />
+        )}
+
+        {activeTab === 'garage' && (
+          <GaragePage
+            selectedLocation={selectedLocation}
+            onInspectVehicle={handleInspectVehicle}
+            onNavigateAuth={() => handleTabChange('auth')}
+          />
+        )}
+
+        {activeTab === 'admin' && (
+          <AdminDashboard
+            onNavigateAuth={() => handleTabChange('auth')}
+          />
+        )}
+
+        {activeTab === 'auth' && (
+          <AuthPage
+            onSuccess={() => handleTabChange('discover')}
+          />
+        )}
+      </main>
+
+      <TelemetryHUD
+        isOpen={isTelemetryOpen}
+        onClose={() => setIsTelemetryOpen(false)}
+        logs={telemetryLogs}
+        onClearLogs={() => setTelemetryLogs([])}
+      />
+
+      <CommandPalette
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+        onNavigate={(tab) => handleTabChange(tab)}
+        onInspectVehicle={handleInspectVehicle}
+      />
+
+      <QuestionnaireModal
+        isOpen={isQuestionnaireOpen}
+        onClose={() => setIsQuestionnaireOpen(false)}
+        userProfile={userProfile}
+        setUserProfile={setUserProfile}
+        onComplete={runRecommendationInference}
+        onLogTelemetry={addTelemetryLog}
+      />
+
+      <Footer onNavigate={(tab) => handleTabChange(tab)} />
+    </div>
+  );
+}
+
+export function App() {
+  return (
+    <Router>
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
     </Router>
   );
 }

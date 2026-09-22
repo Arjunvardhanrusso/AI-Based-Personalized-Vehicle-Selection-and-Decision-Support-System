@@ -91,8 +91,8 @@ export const VehicleImage: React.FC<VehicleImageProps> = ({
     return isExternalRealPhoto(src) ? 'external' : 'body_fallback';
   });
 
-  const [resolvedAttribution, setResolvedAttribution] = useState<string | undefined>(attributionText);
-  const [resolvedSource, setResolvedSource] = useState<string | undefined>(source);
+  const resolvedAttribution = attributionText;
+  const resolvedSource = source;
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [hasError, setHasError] = useState<boolean>(false);
   const isMountedRef = useRef<boolean>(true);

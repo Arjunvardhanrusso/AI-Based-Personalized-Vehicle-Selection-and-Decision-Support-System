@@ -194,7 +194,8 @@ export const DiscoverTab: React.FC<DiscoverTabProps> = ({
   compareSlots,
   selectedLocation,
   onLogTelemetry,
-  onRecalculate
+  onRecalculate,
+  loading
 }) => {
   const handleOptionSelect = (field: keyof UserProfile, value: any) => {
     setUserProfile((prev) => ({

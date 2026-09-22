@@ -540,3 +540,49 @@ export interface AdvancedSearchResponse {
     city: string;
   };
 }
+
+export interface User {
+  id: number;
+  email: string;
+  is_admin: boolean;
+  is_active: boolean;
+}
+
+export interface AuthResponse {
+  user: User;
+  access_token: string;
+  token_type: string;
+}
+
+export interface SavedVehicle {
+  id: number;
+  vehicle_variant_id: string;
+  saved_at: string;
+}
+
+export interface Review {
+  id: number;
+  vehicle_variant_id: string;
+  rating: number;
+  review_text?: string;
+  created_at: string;
+  user_email: string;
+}
+
+export interface Lead {
+  id: number;
+  vehicle_variant_id: string;
+  name: string;
+  phone: string;
+  message?: string;
+  created_at: string;
+  is_contacted: boolean;
+}
+
+export interface AdminStats {
+  users_count: number;
+  leads_count: number;
+  reviews_count: number;
+  garage_saves_count: number;
+}
+

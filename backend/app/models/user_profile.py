@@ -306,15 +306,15 @@ class AdvancedFilterQuery(BaseModel):
         default_factory=list,
     )
 
-    body_types: Optional[List[VehicleType]] = Field(
+    body_types: Optional[List[str]] = Field(
         default_factory=list,
     )
 
-    vehicle_types: Optional[List[VehicleType]] = Field(
+    vehicle_types: Optional[List[str]] = Field(
         default_factory=list,
     )
 
-    performance_types: Optional[List[PerformanceType]] = Field(
+    performance_types: Optional[List[str]] = Field(
         default_factory=list,
     )
 

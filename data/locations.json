@@ -1,0 +1,388 @@
+{
+  "_metadata": {
+    "description": "Pan-India state, union territory, state category, and city master dataset for vehicle registration and ex-showroom price mapping.",
+    "market": "India",
+    "total_states_and_uts": 36,
+    "last_updated": "2026-09"
+  },
+  "states_and_uts": [
+    {
+      "state": "Andhra Pradesh",
+      "code": "AP",
+      "category": "Tier 2 & 3 State",
+      "rto_pct": 0.12,
+      "cities": [
+        "Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Kurnool",
+        "Tirupati", "Kakinada", "Rajahmundry", "Kadapa", "Anantapur",
+        "Eluru", "Vizianagaram", "Machilipatnam", "Ongole", "Chittoor"
+      ]
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "code": "AR",
+      "category": "North-East Hill State",
+      "rto_pct": 0.05,
+      "cities": [
+        "Itanagar", "Naharlagun", "Tawang", "Bomdila", "Pasighat",
+        "Ziro", "Tezu", "Namsai", "Roing", "Aalo"
+      ]
+    },
+    {
+      "state": "Assam",
+      "code": "AS",
+      "category": "North-East Gateway State",
+      "rto_pct": 0.07,
+      "cities": [
+        "Guwahati", "Silchar", "Dibrugarh", "Jorhat", "Nagaon",
+        "Tinsukia", "Tezpur", "Bongaigaon", "Dhubri", "Karimganj"
+      ]
+    },
+    {
+      "state": "Bihar",
+      "code": "BR",
+      "category": "Tier 2 & 3 State",
+      "rto_pct": 0.09,
+      "cities": [
+        "Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Purnia",
+        "Darbhanga", "Bihar Sharif", "Arrah", "Begusarai", "Katihar",
+        "Chhapra", "Munger"
+      ]
+    },
+    {
+      "state": "Chhattisgarh",
+      "code": "CG",
+      "category": "Central Industrial State",
+      "rto_pct": 0.08,
+      "cities": [
+        "Raipur", "Bhilai", "Durg", "Bilaspur", "Korba",
+        "Rajnandgaon", "Jagdalpur", "Raigarh", "Ambikapur", "Dhamtari"
+      ]
+    },
+    {
+      "state": "Goa",
+      "code": "GA",
+      "category": "Coastal Tourist Zone",
+      "rto_pct": 0.09,
+      "cities": [
+        "Panaji", "Margao", "Vasco da Gama", "Mapusa", "Ponda",
+        "Bicholim", "Curchorem"
+      ]
+    },
+    {
+      "state": "Gujarat",
+      "code": "GJ",
+      "category": "Industrial & Commercial Hub State",
+      "rto_pct": 0.06,
+      "cities": [
+        "Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar",
+        "Jamnagar", "Gandhinagar", "Junagadh", "Anand", "Navsari",
+        "Bharuch", "Morbi", "Vapi", "Mehsana", "Porbandar", "Bhuj", "Valsad"
+      ]
+    },
+    {
+      "state": "Haryana",
+      "code": "HR",
+      "category": "NCR & Agricultural Industrial Hub",
+      "rto_pct": 0.10,
+      "cities": [
+        "Gurugram", "Faridabad", "Panipat", "Ambala", "Karnal",
+        "Hisar", "Rohtak", "Panchkula", "Yamunanagar", "Sonipat",
+        "Bahadurgarh", "Rewari", "Jind"
+      ]
+    },
+    {
+      "state": "Himachal Pradesh",
+      "code": "HP",
+      "category": "Northern Hill State",
+      "rto_pct": 0.06,
+      "cities": [
+        "Shimla", "Dharamshala", "Mandi", "Solan", "Kullu",
+        "Hamirpur", "Baddi", "Bilaspur", "Chamba", "Una"
+      ]
+    },
+    {
+      "state": "Jharkhand",
+      "code": "JH",
+      "category": "Mineral & Industrial State",
+      "rto_pct": 0.08,
+      "cities": [
+        "Ranchi", "Jamshedpur", "Dhanbad", "Bokaro Steel City", "Deoghar",
+        "Hazaribagh", "Giridih", "Ramgarh", "Phusro"
+      ]
+    },
+    {
+      "state": "Karnataka",
+      "code": "KA",
+      "category": "IT & Tech Capital State",
+      "rto_pct": 0.1887,
+      "cities": [
+        "Bengaluru", "Mysuru", "Hubballi-Dharwad", "Mangaluru", "Belagavi",
+        "Kalaburagi", "Davanagere", "Ballari", "Shivamogga", "Tumakuru",
+        "Udupi", "Hassan", "Bidar", "Hosapete", "Vijayapura"
+      ]
+    },
+    {
+      "state": "Kerala",
+      "code": "KL",
+      "category": "Coastal & Maritime State",
+      "rto_pct": 0.13,
+      "cities": [
+        "Kochi", "Thiruvananthapuram", "Kozhikode", "Thrissur", "Kollam",
+        "Kannur", "Alappuzha", "Palakkad", "Kottayam", "Malappuram",
+        "Thalassery", "Pathanamthitta"
+      ]
+    },
+    {
+      "state": "Madhya Pradesh",
+      "code": "MP",
+      "category": "Central Urban State",
+      "rto_pct": 0.10,
+      "cities": [
+        "Indore", "Bhopal", "Jabalpur", "Gwalior", "Ujjain",
+        "Sagar", "Dewas", "Satna", "Ratlam", "Rewa", "Katni",
+        "Singrauli", "Burhanpur"
+      ]
+    },
+    {
+      "state": "Maharashtra",
+      "code": "MH",
+      "category": "Financial & Metro Hub State",
+      "rto_pct": 0.13,
+      "cities": [
+        "Mumbai", "Pune", "Nagpur", "Thane", "Nashik", "Navi Mumbai",
+        "Chhatrapati Sambhaji Nagar", "Solapur", "Kolhapur", "Amravati",
+        "Nanded", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule",
+        "Ahmednagar", "Chandrapur", "Ratnagiri", "Satara"
+      ]
+    },
+    {
+      "state": "Manipur",
+      "code": "MN",
+      "category": "North-East Frontier State",
+      "rto_pct": 0.05,
+      "cities": [
+        "Imphal", "Thoubal", "Bishnupur", "Churachandpur", "Ukhrul",
+        "Senapati", "Kakching", "Jiribam"
+      ]
+    },
+    {
+      "state": "Meghalaya",
+      "code": "ML",
+      "category": "North-East Hill State",
+      "rto_pct": 0.05,
+      "cities": [
+        "Shillong", "Tura", "Nongpoh", "Jowai", "Nongstoin",
+        "Williamnagar", "Baghmara", "Resubelpara"
+      ]
+    },
+    {
+      "state": "Mizoram",
+      "code": "MZ",
+      "category": "North-East Hill State",
+      "rto_pct": 0.05,
+      "cities": [
+        "Aizawl", "Lunglei", "Champhai", "Kolasib", "Serchhip",
+        "Lawngtlai", "Saiha", "Mamit"
+      ]
+    },
+    {
+      "state": "Nagaland",
+      "code": "NL",
+      "category": "North-East Hill State",
+      "rto_pct": 0.05,
+      "cities": [
+        "Kohima", "Dimapur", "Mokokchung", "Tuensang", "Wokha",
+        "Mon", "Zunheboto", "Phek"
+      ]
+    },
+    {
+      "state": "Odisha",
+      "code": "OD",
+      "category": "Eastern Coastal & Mineral State",
+      "rto_pct": 0.08,
+      "cities": [
+        "Bhubaneswar", "Cuttack", "Rourkela", "Berhampur", "Sambalpur",
+        "Puri", "Balasore", "Bhadrak", "Baripada", "Jharsuguda"
+      ]
+    },
+    {
+      "state": "Punjab",
+      "code": "PB",
+      "category": "Northern Agricultural & Industrial State",
+      "rto_pct": 0.09,
+      "cities": [
+        "Ludhiana", "Amritsar", "Jalandhar", "Patiala", "Bathinda",
+        "Mohali", "Pathankot", "Hoshiarpur", "Batala", "Moga", "Khanna"
+      ]
+    },
+    {
+      "state": "Rajasthan",
+      "code": "RJ",
+      "category": "Heritage & Commercial State",
+      "rto_pct": 0.08,
+      "cities": [
+        "Jaipur", "Jodhpur", "Kota", "Bikaner", "Ajmer", "Udaipur",
+        "Bhilwara", "Alwar", "Sikar", "Sri Ganganagar", "Bharatpur",
+        "Pali", "Barmer", "Chittorgarh"
+      ]
+    },
+    {
+      "state": "Sikkim",
+      "code": "SK",
+      "category": "Himalayan Ecotourism State",
+      "rto_pct": 0.05,
+      "cities": [
+        "Gangtok", "Namchi", "Gyalshing", "Mangan", "Rangpo",
+        "Singtam", "Jorethang"
+      ]
+    },
+    {
+      "state": "Tamil Nadu",
+      "code": "TN",
+      "category": "Automotive & Industrial Capital State",
+      "rto_pct": 0.15,
+      "cities": [
+        "Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem",
+        "Tirunelveli", "Erode", "Vellore", "Thoothukudi", "Dindigul",
+        "Thanjavur", "Ranipet", "Kanchipuram", "Nagercoil", "Karur",
+        "Cuddalore", "Hosur", "Tiruppur"
+      ]
+    },
+    {
+      "state": "Telangana",
+      "code": "TS",
+      "category": "IT & Industrial Metropolis State",
+      "rto_pct": 0.12,
+      "cities": [
+        "Hyderabad", "Warangal", "Nizamabad", "Khammam", "Karimnagar",
+        "Ramagundam", "Secunderabad", "Mahbubnagar", "Nalgonda",
+        "Adilabad", "Suryapet"
+      ]
+    },
+    {
+      "state": "Tripura",
+      "code": "TR",
+      "category": "North-East Border State",
+      "rto_pct": 0.05,
+      "cities": [
+        "Agartala", "Udaipur", "Dharmanagar", "Kailasahar", "Ambassa",
+        "Belonia", "Khowai", "Bishramganj"
+      ]
+    },
+    {
+      "state": "Uttar Pradesh",
+      "code": "UP",
+      "category": "NCR & Populous Urban State",
+      "rto_pct": 0.08,
+      "cities": [
+        "Noida", "Greater Noida", "Ghaziabad", "Lucknow", "Kanpur",
+        "Varanasi", "Agra", "Prayagraj", "Meerut", "Bareilly",
+        "Aligarh", "Moradabad", "Saharanpur", "Gorakhpur", "Jhansi",
+        "Mathura", "Firozabad", "Muzaffarnagar", "Ayodhya", "Sultanpur"
+      ]
+    },
+    {
+      "state": "Uttarakhand",
+      "code": "UK",
+      "category": "Himalayan & Pilgrimage State",
+      "rto_pct": 0.08,
+      "cities": [
+        "Dehradun", "Haridwar", "Roorkee", "Haldwani", "Rishikesh",
+        "Kashipur", "Rudrapur", "Nainital", "Almora", "Pithoragarh"
+      ]
+    },
+    {
+      "state": "West Bengal",
+      "code": "WB",
+      "category": "Eastern Metro & Industrial State",
+      "rto_pct": 0.11,
+      "cities": [
+        "Kolkata", "Howrah", "Durgapur", "Asansol", "Siliguri",
+        "Bardhaman", "Malda", "Kharagpur", "Berhampore", "Haldia",
+        "Habra", "Jalpaiguri"
+      ]
+    },
+
+    {
+      "state": "Andaman and Nicobar Islands",
+      "code": "AN",
+      "category": "Island Union Territory",
+      "rto_pct": 0.05,
+      "cities": [
+        "Port Blair", "Diglipur", "Mayabunder", "Rangat", "Car Nicobar"
+      ]
+    },
+    {
+      "state": "Chandigarh",
+      "code": "CH",
+      "category": "Union Territory & Joint Capital",
+      "rto_pct": 0.06,
+      "cities": [
+        "Chandigarh"
+      ]
+    },
+    {
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "code": "DN",
+      "category": "Union Territory Low-Tax Zone",
+      "rto_pct": 0.04,
+      "cities": [
+        "Daman", "Diu", "Silvassa"
+      ]
+    },
+    {
+      "state": "Delhi",
+      "code": "DL",
+      "category": "National Capital Territory (Metro)",
+      "rto_pct": 0.10,
+      "cities": [
+        "Delhi", "New Delhi", "North Delhi", "South Delhi", "West Delhi", "East Delhi"
+      ]
+    },
+    {
+      "state": "Delhi NCR",
+      "code": "DL-NCR",
+      "category": "National Capital Region Megacity",
+      "rto_pct": 0.10,
+      "cities": [
+        "Delhi", "Gurugram", "Noida", "Faridabad", "Ghaziabad", "Greater Noida"
+      ]
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "code": "JK",
+      "category": "Northern Union Territory",
+      "rto_pct": 0.09,
+      "cities": [
+        "Srinagar", "Jammu", "Anantnag", "Baramulla", "Udhampur", "Kathua", "Sopore"
+      ]
+    },
+    {
+      "state": "Ladakh",
+      "code": "LA",
+      "category": "High-Altitude Union Territory",
+      "rto_pct": 0.08,
+      "cities": [
+        "Leh", "Kargil", "Diskit"
+      ]
+    },
+    {
+      "state": "Lakshadweep",
+      "code": "LD",
+      "category": "Island Union Territory",
+      "rto_pct": 0.04,
+      "cities": [
+        "Kavaratti", "Agatti", "Amini", "Minicoy"
+      ]
+    },
+    {
+      "state": "Puducherry",
+      "code": "PY",
+      "category": "Union Territory Low-Tax Zone",
+      "rto_pct": 0.05,
+      "cities": [
+        "Puducherry", "Karaikal", "Mahe", "Yanam"
+      ]
+    }
+  ]
+}

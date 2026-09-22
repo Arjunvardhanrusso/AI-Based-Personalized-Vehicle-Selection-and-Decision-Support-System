@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="100%" stop-color="#141B26" />
+    </linearGradient>
+    <linearGradient id="carGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#242E3D" />
+      <stop offset="50%" stop-color="#3D4B60" />
+      <stop offset="100%" stop-color="#242E3D" />
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18202B" />
+      <stop offset="100%" stop-color="#0B0F17" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="240" fill="url(#bgGrad)" rx="12" stroke="#222D3D" stroke-width="1.5" />
+  
+  <!-- Subtle Ground Shadow -->
+  <ellipse cx="200" cy="180" rx="140" ry="10" fill="#05080D" opacity="0.8" />
+  <line x1="40" y1="180" x2="360" y2="180" stroke="#222D3D" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6" />
+
+  <!-- Car Silhouette -->
+  <path d="M 65,152 
+           C 75,142 105,137 130,132 
+           L 170,96 
+           C 190,83 240,81 265,96 
+           L 310,126 
+           C 338,131 352,141 356,155
+           L 346,162 
+           C 340,165 315,165 305,151
+           C 295,139 270,139 260,151
+           L 160,151
+           C 150,139 125,139 115,151
+           L 75,156
+           Z" 
+        fill="url(#carGrad)" stroke="#38BDF8" stroke-width="1.2" stroke-linejoin="round" />
+
+  <!-- Glass Greenhouse -->
+  <path d="M 174,101 L 258,101 L 294,127 L 144,127 Z" fill="#0F172A" stroke="#475569" stroke-width="1" opacity="0.9" />
+  <line x1="220" y1="101" x2="220" y2="127" stroke="#334155" stroke-width="2" />
+
+  <!-- Wheels -->
+  <!-- Front Wheel -->
+  <circle cx="282" cy="155" r="22" fill="url(#wheelGrad)" stroke="#475569" stroke-width="3" />
+  <circle cx="282" cy="155" r="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+  <circle cx="282" cy="155" r="5" fill="#E2E8F0" />
+  <!-- Rear Wheel -->
+  <circle cx="138" cy="155" r="22" fill="url(#wheelGrad)" stroke="#475569" stroke-width="3" />
+  <circle cx="138" cy="155" r="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+  <circle cx="138" cy="155" r="5" fill="#E2E8F0" />
+
+  <!-- LED Accents -->
+  <path d="M 338,143 L 354,149 L 334,153 Z" fill="#38BDF8" />
+  <path d="M 70,147 L 64,151 L 73,153 Z" fill="#EF4444" />
+
+  <text x="200" y="210" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" letter-spacing="1.5" font-weight="600">
+    VEHICLEIQ MODEL ARCHIVE
+  </text>
+</svg>

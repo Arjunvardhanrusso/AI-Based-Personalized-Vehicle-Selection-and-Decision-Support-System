@@ -1,0 +1,2192 @@
+[
+  {
+    "vehicle_id": "MS001",
+    "vehicle_name": "Alto K10",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_alto_k10.jpg",
+    "image_path": "/cars/maruti_suzuki_alto_k10.jpg",
+    "queries": [
+      "Maruti Suzuki Alto K10 India official",
+      "Maruti Suzuki Alto K10 petrol India",
+      "Maruti Suzuki Alto K10 India car",
+      "Maruti Suzuki Alto K10 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS002",
+    "vehicle_name": "S-Presso",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_s_presso.jpg",
+    "image_path": "/cars/maruti_suzuki_s_presso.jpg",
+    "queries": [
+      "Maruti Suzuki S-Presso India official",
+      "Maruti Suzuki S-Presso petrol India",
+      "Maruti Suzuki S-Presso India car",
+      "Maruti Suzuki S-Presso official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS003",
+    "vehicle_name": "Celerio",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_celerio.jpg",
+    "image_path": "/cars/maruti_suzuki_celerio.jpg",
+    "queries": [
+      "Maruti Suzuki Celerio India official",
+      "Maruti Suzuki Celerio petrol India",
+      "Maruti Suzuki Celerio India car",
+      "Maruti Suzuki Celerio official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS004",
+    "vehicle_name": "Wagon R",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_wagon_r.jpg",
+    "image_path": "/cars/maruti_suzuki_wagon_r.jpg",
+    "queries": [
+      "Maruti Suzuki Wagon R India official",
+      "Maruti Suzuki Wagon R petrol India",
+      "Maruti Suzuki Wagon R India car",
+      "Maruti Suzuki Wagon R official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS005",
+    "vehicle_name": "Swift",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_swift.jpg",
+    "image_path": "/cars/maruti_suzuki_swift.jpg",
+    "queries": [
+      "Maruti Suzuki Swift India official",
+      "Maruti Suzuki Swift petrol India",
+      "Maruti Suzuki Swift India car",
+      "Maruti Suzuki Swift official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS006",
+    "vehicle_name": "Baleno",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_baleno.jpg",
+    "image_path": "/cars/maruti_suzuki_baleno.jpg",
+    "queries": [
+      "Maruti Suzuki Baleno India official",
+      "Maruti Suzuki Baleno petrol India",
+      "Maruti Suzuki Baleno India car",
+      "Maruti Suzuki Baleno official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS007",
+    "vehicle_name": "Dzire",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_dzire.jpg",
+    "image_path": "/cars/maruti_suzuki_dzire.jpg",
+    "queries": [
+      "Maruti Suzuki Dzire India official",
+      "Maruti Suzuki Dzire petrol India",
+      "Maruti Suzuki Dzire India car",
+      "Maruti Suzuki Dzire official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS008",
+    "vehicle_name": "Fronx",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_fronx.jpg",
+    "image_path": "/cars/maruti_suzuki_fronx.jpg",
+    "queries": [
+      "Maruti Suzuki Fronx India official",
+      "Maruti Suzuki Fronx petrol India",
+      "Maruti Suzuki Fronx India car",
+      "Maruti Suzuki Fronx official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS009",
+    "vehicle_name": "Brezza",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_brezza.jpg",
+    "image_path": "/cars/maruti_suzuki_brezza.jpg",
+    "queries": [
+      "Maruti Suzuki Brezza India official",
+      "Maruti Suzuki Brezza petrol India",
+      "Maruti Suzuki Brezza India car",
+      "Maruti Suzuki Brezza official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS010",
+    "vehicle_name": "Ertiga",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_ertiga.jpg",
+    "image_path": "/cars/maruti_suzuki_ertiga.jpg",
+    "queries": [
+      "Maruti Suzuki Ertiga India official",
+      "Maruti Suzuki Ertiga petrol India",
+      "Maruti Suzuki Ertiga India car",
+      "Maruti Suzuki Ertiga official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS011",
+    "vehicle_name": "XL6",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_xl6.jpg",
+    "image_path": "/cars/maruti_suzuki_xl6.jpg",
+    "queries": [
+      "Maruti Suzuki XL6 India official",
+      "Maruti Suzuki XL6 petrol India",
+      "Maruti Suzuki XL6 India car",
+      "Maruti Suzuki XL6 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS012",
+    "vehicle_name": "Alto K10 CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_alto_k10_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_alto_k10_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Alto K10 CNG India official",
+      "Maruti Suzuki Alto K10 CNG cng India",
+      "Maruti Suzuki Alto K10 CNG India car",
+      "Maruti Suzuki Alto K10 CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS013",
+    "vehicle_name": "S-Presso CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_s_presso_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_s_presso_cng.jpg",
+    "queries": [
+      "Maruti Suzuki S-Presso CNG India official",
+      "Maruti Suzuki S-Presso CNG cng India",
+      "Maruti Suzuki S-Presso CNG India car",
+      "Maruti Suzuki S-Presso CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS014",
+    "vehicle_name": "Celerio CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_celerio_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_celerio_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Celerio CNG India official",
+      "Maruti Suzuki Celerio CNG cng India",
+      "Maruti Suzuki Celerio CNG India car",
+      "Maruti Suzuki Celerio CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS015",
+    "vehicle_name": "Wagon R CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_wagon_r_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_wagon_r_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Wagon R CNG India official",
+      "Maruti Suzuki Wagon R CNG cng India",
+      "Maruti Suzuki Wagon R CNG India car",
+      "Maruti Suzuki Wagon R CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS016",
+    "vehicle_name": "Swift CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_swift_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_swift_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Swift CNG India official",
+      "Maruti Suzuki Swift CNG cng India",
+      "Maruti Suzuki Swift CNG India car",
+      "Maruti Suzuki Swift CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS017",
+    "vehicle_name": "Baleno CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_baleno_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_baleno_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Baleno CNG India official",
+      "Maruti Suzuki Baleno CNG cng India",
+      "Maruti Suzuki Baleno CNG India car",
+      "Maruti Suzuki Baleno CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS018",
+    "vehicle_name": "Dzire CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_dzire_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_dzire_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Dzire CNG India official",
+      "Maruti Suzuki Dzire CNG cng India",
+      "Maruti Suzuki Dzire CNG India car",
+      "Maruti Suzuki Dzire CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS019",
+    "vehicle_name": "Brezza CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_brezza_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_brezza_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Brezza CNG India official",
+      "Maruti Suzuki Brezza CNG cng India",
+      "Maruti Suzuki Brezza CNG India car",
+      "Maruti Suzuki Brezza CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS020",
+    "vehicle_name": "Fronx CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_fronx_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_fronx_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Fronx CNG India official",
+      "Maruti Suzuki Fronx CNG cng India",
+      "Maruti Suzuki Fronx CNG India car",
+      "Maruti Suzuki Fronx CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS021",
+    "vehicle_name": "Ertiga CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_ertiga_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_ertiga_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Ertiga CNG India official",
+      "Maruti Suzuki Ertiga CNG cng India",
+      "Maruti Suzuki Ertiga CNG India car",
+      "Maruti Suzuki Ertiga CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS022",
+    "vehicle_name": "XL6 CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_xl6_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_xl6_cng.jpg",
+    "queries": [
+      "Maruti Suzuki XL6 CNG India official",
+      "Maruti Suzuki XL6 CNG cng India",
+      "Maruti Suzuki XL6 CNG India car",
+      "Maruti Suzuki XL6 CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS023",
+    "vehicle_name": "Victoris Petrol Smart Hybrid",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "hybrid",
+    "image_filename": "maruti_suzuki_victoris_petrol_smart_hybrid.jpg",
+    "image_path": "/cars/maruti_suzuki_victoris_petrol_smart_hybrid.jpg",
+    "queries": [
+      "Maruti Suzuki Victoris Petrol Smart Hybrid India official",
+      "Maruti Suzuki Victoris Petrol Smart Hybrid hybrid India",
+      "Maruti Suzuki Victoris Petrol Smart Hybrid India car",
+      "Maruti Suzuki Victoris Petrol Smart Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS024",
+    "vehicle_name": "Victoris CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_victoris_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_victoris_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Victoris CNG India official",
+      "Maruti Suzuki Victoris CNG cng India",
+      "Maruti Suzuki Victoris CNG India car",
+      "Maruti Suzuki Victoris CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS025",
+    "vehicle_name": "Victoris Strong Hybrid",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "hybrid",
+    "image_filename": "maruti_suzuki_victoris_strong_hybrid.jpg",
+    "image_path": "/cars/maruti_suzuki_victoris_strong_hybrid.jpg",
+    "queries": [
+      "Maruti Suzuki Victoris Strong Hybrid India official",
+      "Maruti Suzuki Victoris Strong Hybrid hybrid India",
+      "Maruti Suzuki Victoris Strong Hybrid India car",
+      "Maruti Suzuki Victoris Strong Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS026",
+    "vehicle_name": "Grand Vitara Smart Hybrid",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "hybrid",
+    "image_filename": "maruti_suzuki_grand_vitara_smart_hybrid.jpg",
+    "image_path": "/cars/maruti_suzuki_grand_vitara_smart_hybrid.jpg",
+    "queries": [
+      "Maruti Suzuki Grand Vitara Smart Hybrid India official",
+      "Maruti Suzuki Grand Vitara Smart Hybrid hybrid India",
+      "Maruti Suzuki Grand Vitara Smart Hybrid India car",
+      "Maruti Suzuki Grand Vitara Smart Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS027",
+    "vehicle_name": "Grand Vitara CNG",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_grand_vitara_cng.jpg",
+    "image_path": "/cars/maruti_suzuki_grand_vitara_cng.jpg",
+    "queries": [
+      "Maruti Suzuki Grand Vitara CNG India official",
+      "Maruti Suzuki Grand Vitara CNG cng India",
+      "Maruti Suzuki Grand Vitara CNG India car",
+      "Maruti Suzuki Grand Vitara CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MS028",
+    "vehicle_name": "Grand Vitara Strong Hybrid",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "hybrid",
+    "image_filename": "maruti_suzuki_grand_vitara_strong_hybrid.jpg",
+    "image_path": "/cars/maruti_suzuki_grand_vitara_strong_hybrid.jpg",
+    "queries": [
+      "Maruti Suzuki Grand Vitara Strong Hybrid India official",
+      "Maruti Suzuki Grand Vitara Strong Hybrid hybrid India",
+      "Maruti Suzuki Grand Vitara Strong Hybrid India car",
+      "Maruti Suzuki Grand Vitara Strong Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY001",
+    "vehicle_name": "Glanza",
+    "brand": "Toyota",
+    "fuel_type": "petrol",
+    "image_filename": "toyota_glanza.jpg",
+    "image_path": "/cars/toyota_glanza.jpg",
+    "queries": [
+      "Toyota Glanza India official",
+      "Toyota Glanza petrol India",
+      "Toyota Glanza India car",
+      "Toyota Glanza official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY002",
+    "vehicle_name": "Glanza CNG",
+    "brand": "Toyota",
+    "fuel_type": "cng",
+    "image_filename": "toyota_glanza_cng.jpg",
+    "image_path": "/cars/toyota_glanza_cng.jpg",
+    "queries": [
+      "Toyota Glanza CNG India official",
+      "Toyota Glanza CNG cng India",
+      "Toyota Glanza CNG India car",
+      "Toyota Glanza CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY003",
+    "vehicle_name": "Urban Cruiser Hyryder Mild Hybrid",
+    "brand": "Toyota",
+    "fuel_type": "hybrid",
+    "image_filename": "toyota_urban_cruiser_hyryder_mild_hybrid.jpg",
+    "image_path": "/cars/toyota_urban_cruiser_hyryder_mild_hybrid.jpg",
+    "queries": [
+      "Toyota Urban Cruiser Hyryder Mild Hybrid India official",
+      "Toyota Urban Cruiser Hyryder Mild Hybrid hybrid India",
+      "Toyota Urban Cruiser Hyryder Mild Hybrid India car",
+      "Toyota Urban Cruiser Hyryder Mild Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY004",
+    "vehicle_name": "Urban Cruiser Hyryder Strong Hybrid",
+    "brand": "Toyota",
+    "fuel_type": "hybrid",
+    "image_filename": "toyota_urban_cruiser_hyryder_strong_hybrid.jpg",
+    "image_path": "/cars/toyota_urban_cruiser_hyryder_strong_hybrid.jpg",
+    "queries": [
+      "Toyota Urban Cruiser Hyryder Strong Hybrid India official",
+      "Toyota Urban Cruiser Hyryder Strong Hybrid hybrid India",
+      "Toyota Urban Cruiser Hyryder Strong Hybrid India car",
+      "Toyota Urban Cruiser Hyryder Strong Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY005",
+    "vehicle_name": "Innova Hycross Petrol",
+    "brand": "Toyota",
+    "fuel_type": "petrol",
+    "image_filename": "toyota_innova_hycross_petrol.jpg",
+    "image_path": "/cars/toyota_innova_hycross_petrol.jpg",
+    "queries": [
+      "Toyota Innova Hycross Petrol India official",
+      "Toyota Innova Hycross Petrol petrol India",
+      "Toyota Innova Hycross Petrol India car",
+      "Toyota Innova Hycross Petrol official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY006",
+    "vehicle_name": "Innova Hycross Strong Hybrid",
+    "brand": "Toyota",
+    "fuel_type": "hybrid",
+    "image_filename": "toyota_innova_hycross_strong_hybrid.jpg",
+    "image_path": "/cars/toyota_innova_hycross_strong_hybrid.jpg",
+    "queries": [
+      "Toyota Innova Hycross Strong Hybrid India official",
+      "Toyota Innova Hycross Strong Hybrid hybrid India",
+      "Toyota Innova Hycross Strong Hybrid India car",
+      "Toyota Innova Hycross Strong Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY007",
+    "vehicle_name": "Innova Crysta Diesel",
+    "brand": "Toyota",
+    "fuel_type": "diesel",
+    "image_filename": "toyota_innova_crysta_diesel.jpg",
+    "image_path": "/cars/toyota_innova_crysta_diesel.jpg",
+    "queries": [
+      "Toyota Innova Crysta Diesel India official",
+      "Toyota Innova Crysta Diesel diesel India",
+      "Toyota Innova Crysta Diesel India car",
+      "Toyota Innova Crysta Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY008",
+    "vehicle_name": "Camry Hybrid",
+    "brand": "Toyota",
+    "fuel_type": "hybrid",
+    "image_filename": "toyota_camry_hybrid.jpg",
+    "image_path": "/cars/toyota_camry_hybrid.jpg",
+    "queries": [
+      "Toyota Camry Hybrid India official",
+      "Toyota Camry Hybrid hybrid India",
+      "Toyota Camry Hybrid India car",
+      "Toyota Camry Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY009",
+    "vehicle_name": "Fortuner Diesel",
+    "brand": "Toyota",
+    "fuel_type": "diesel",
+    "image_filename": "toyota_fortuner_diesel.jpg",
+    "image_path": "/cars/toyota_fortuner_diesel.jpg",
+    "queries": [
+      "Toyota Fortuner Diesel India official",
+      "Toyota Fortuner Diesel diesel India",
+      "Toyota Fortuner Diesel India car",
+      "Toyota Fortuner Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TY010",
+    "vehicle_name": "Vellfire Hybrid",
+    "brand": "Toyota",
+    "fuel_type": "hybrid",
+    "image_filename": "toyota_vellfire_hybrid.jpg",
+    "image_path": "/cars/toyota_vellfire_hybrid.jpg",
+    "queries": [
+      "Toyota Vellfire Hybrid India official",
+      "Toyota Vellfire Hybrid hybrid India",
+      "Toyota Vellfire Hybrid India car",
+      "Toyota Vellfire Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HO001",
+    "vehicle_name": "Amaze",
+    "brand": "Honda",
+    "fuel_type": "petrol",
+    "image_filename": "honda_amaze.jpg",
+    "image_path": "/cars/honda_amaze.jpg",
+    "queries": [
+      "Honda Amaze India official",
+      "Honda Amaze petrol India",
+      "Honda Amaze India car",
+      "Honda Amaze official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HO002",
+    "vehicle_name": "City",
+    "brand": "Honda",
+    "fuel_type": "petrol",
+    "image_filename": "honda_city.jpg",
+    "image_path": "/cars/honda_city.jpg",
+    "queries": [
+      "Honda City India official",
+      "Honda City petrol India",
+      "Honda City India car",
+      "Honda City official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HO003",
+    "vehicle_name": "City e:HEV",
+    "brand": "Honda",
+    "fuel_type": "hybrid",
+    "image_filename": "honda_city_e_hev.jpg",
+    "image_path": "/cars/honda_city_e_hev.jpg",
+    "queries": [
+      "Honda City e:HEV India official",
+      "Honda City e:HEV hybrid India",
+      "Honda City e:HEV India car",
+      "Honda City e:HEV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HO004",
+    "vehicle_name": "Elevate",
+    "brand": "Honda",
+    "fuel_type": "petrol",
+    "image_filename": "honda_elevate.jpg",
+    "image_path": "/cars/honda_elevate.jpg",
+    "queries": [
+      "Honda Elevate India official",
+      "Honda Elevate petrol India",
+      "Honda Elevate India car",
+      "Honda Elevate official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY001",
+    "vehicle_name": "Grand i10 Nios",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_grand_i10_nios.jpg",
+    "image_path": "/cars/hyundai_grand_i10_nios.jpg",
+    "queries": [
+      "Hyundai Grand i10 Nios India official",
+      "Hyundai Grand i10 Nios petrol India",
+      "Hyundai Grand i10 Nios India car",
+      "Hyundai Grand i10 Nios official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY002",
+    "vehicle_name": "Grand i10 Nios CNG",
+    "brand": "Hyundai",
+    "fuel_type": "cng",
+    "image_filename": "hyundai_grand_i10_nios_cng.jpg",
+    "image_path": "/cars/hyundai_grand_i10_nios_cng.jpg",
+    "queries": [
+      "Hyundai Grand i10 Nios CNG India official",
+      "Hyundai Grand i10 Nios CNG cng India",
+      "Hyundai Grand i10 Nios CNG India car",
+      "Hyundai Grand i10 Nios CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY003",
+    "vehicle_name": "Exter",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_exter.jpg",
+    "image_path": "/cars/hyundai_exter.jpg",
+    "queries": [
+      "Hyundai Exter India official",
+      "Hyundai Exter petrol India",
+      "Hyundai Exter India car",
+      "Hyundai Exter official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY004",
+    "vehicle_name": "Exter CNG",
+    "brand": "Hyundai",
+    "fuel_type": "cng",
+    "image_filename": "hyundai_exter_cng.jpg",
+    "image_path": "/cars/hyundai_exter_cng.jpg",
+    "queries": [
+      "Hyundai Exter CNG India official",
+      "Hyundai Exter CNG cng India",
+      "Hyundai Exter CNG India car",
+      "Hyundai Exter CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY005",
+    "vehicle_name": "Aura CNG",
+    "brand": "Hyundai",
+    "fuel_type": "cng",
+    "image_filename": "hyundai_aura_cng.jpg",
+    "image_path": "/cars/hyundai_aura_cng.jpg",
+    "queries": [
+      "Hyundai Aura CNG India official",
+      "Hyundai Aura CNG cng India",
+      "Hyundai Aura CNG India car",
+      "Hyundai Aura CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY006",
+    "vehicle_name": "i20",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_i20.jpg",
+    "image_path": "/cars/hyundai_i20.jpg",
+    "queries": [
+      "Hyundai i20 India official",
+      "Hyundai i20 petrol India",
+      "Hyundai i20 India car",
+      "Hyundai i20 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY007",
+    "vehicle_name": "Venue",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_venue.jpg",
+    "image_path": "/cars/hyundai_venue.jpg",
+    "queries": [
+      "Hyundai Venue India official",
+      "Hyundai Venue petrol India",
+      "Hyundai Venue India car",
+      "Hyundai Venue official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY008",
+    "vehicle_name": "Venue Diesel",
+    "brand": "Hyundai",
+    "fuel_type": "diesel",
+    "image_filename": "hyundai_venue_diesel.jpg",
+    "image_path": "/cars/hyundai_venue_diesel.jpg",
+    "queries": [
+      "Hyundai Venue Diesel India official",
+      "Hyundai Venue Diesel diesel India",
+      "Hyundai Venue Diesel India car",
+      "Hyundai Venue Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY009",
+    "vehicle_name": "Creta",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_creta.jpg",
+    "image_path": "/cars/hyundai_creta.jpg",
+    "queries": [
+      "Hyundai Creta India official",
+      "Hyundai Creta petrol India",
+      "Hyundai Creta India car",
+      "Hyundai Creta official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY010",
+    "vehicle_name": "Creta Diesel",
+    "brand": "Hyundai",
+    "fuel_type": "diesel",
+    "image_filename": "hyundai_creta_diesel.jpg",
+    "image_path": "/cars/hyundai_creta_diesel.jpg",
+    "queries": [
+      "Hyundai Creta Diesel India official",
+      "Hyundai Creta Diesel diesel India",
+      "Hyundai Creta Diesel India car",
+      "Hyundai Creta Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY011",
+    "vehicle_name": "Verna",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_verna.jpg",
+    "image_path": "/cars/hyundai_verna.jpg",
+    "queries": [
+      "Hyundai Verna India official",
+      "Hyundai Verna petrol India",
+      "Hyundai Verna India car",
+      "Hyundai Verna official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY012",
+    "vehicle_name": "Alcazar",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_alcazar.jpg",
+    "image_path": "/cars/hyundai_alcazar.jpg",
+    "queries": [
+      "Hyundai Alcazar India official",
+      "Hyundai Alcazar petrol India",
+      "Hyundai Alcazar India car",
+      "Hyundai Alcazar official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "HY013",
+    "vehicle_name": "Alcazar Diesel",
+    "brand": "Hyundai",
+    "fuel_type": "diesel",
+    "image_filename": "hyundai_alcazar_diesel.jpg",
+    "image_path": "/cars/hyundai_alcazar_diesel.jpg",
+    "queries": [
+      "Hyundai Alcazar Diesel India official",
+      "Hyundai Alcazar Diesel diesel India",
+      "Hyundai Alcazar Diesel India car",
+      "Hyundai Alcazar Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA001",
+    "vehicle_name": "Tiago",
+    "brand": "Tata",
+    "fuel_type": "petrol",
+    "image_filename": "tata_tiago.jpg",
+    "image_path": "/cars/tata_tiago.jpg",
+    "queries": [
+      "Tata Tiago India official",
+      "Tata Tiago petrol India",
+      "Tata Tiago India car",
+      "Tata Tiago official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA002",
+    "vehicle_name": "Tiago CNG",
+    "brand": "Tata",
+    "fuel_type": "cng",
+    "image_filename": "tata_tiago_cng.jpg",
+    "image_path": "/cars/tata_tiago_cng.jpg",
+    "queries": [
+      "Tata Tiago CNG India official",
+      "Tata Tiago CNG cng India",
+      "Tata Tiago CNG India car",
+      "Tata Tiago CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA003",
+    "vehicle_name": "Tiago EV",
+    "brand": "Tata",
+    "fuel_type": "ev",
+    "image_filename": "tata_tiago_ev.jpg",
+    "image_path": "/cars/tata_tiago_ev.jpg",
+    "queries": [
+      "Tata Tiago EV India official",
+      "Tata Tiago EV ev India",
+      "Tata Tiago EV India car",
+      "Tata Tiago EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA004",
+    "vehicle_name": "Tigor",
+    "brand": "Tata",
+    "fuel_type": "petrol",
+    "image_filename": "tata_tigor.jpg",
+    "image_path": "/cars/tata_tigor.jpg",
+    "queries": [
+      "Tata Tigor India official",
+      "Tata Tigor petrol India",
+      "Tata Tigor India car",
+      "Tata Tigor official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA005",
+    "vehicle_name": "Tigor CNG",
+    "brand": "Tata",
+    "fuel_type": "cng",
+    "image_filename": "tata_tigor_cng.jpg",
+    "image_path": "/cars/tata_tigor_cng.jpg",
+    "queries": [
+      "Tata Tigor CNG India official",
+      "Tata Tigor CNG cng India",
+      "Tata Tigor CNG India car",
+      "Tata Tigor CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA006",
+    "vehicle_name": "Tigor EV",
+    "brand": "Tata",
+    "fuel_type": "ev",
+    "image_filename": "tata_tigor_ev.jpg",
+    "image_path": "/cars/tata_tigor_ev.jpg",
+    "queries": [
+      "Tata Tigor EV India official",
+      "Tata Tigor EV ev India",
+      "Tata Tigor EV India car",
+      "Tata Tigor EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA007",
+    "vehicle_name": "Punch",
+    "brand": "Tata",
+    "fuel_type": "petrol",
+    "image_filename": "tata_punch.jpg",
+    "image_path": "/cars/tata_punch.jpg",
+    "queries": [
+      "Tata Punch India official",
+      "Tata Punch petrol India",
+      "Tata Punch India car",
+      "Tata Punch official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA008",
+    "vehicle_name": "Punch CNG",
+    "brand": "Tata",
+    "fuel_type": "cng",
+    "image_filename": "tata_punch_cng.jpg",
+    "image_path": "/cars/tata_punch_cng.jpg",
+    "queries": [
+      "Tata Punch CNG India official",
+      "Tata Punch CNG cng India",
+      "Tata Punch CNG India car",
+      "Tata Punch CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA009",
+    "vehicle_name": "Punch EV",
+    "brand": "Tata",
+    "fuel_type": "ev",
+    "image_filename": "tata_punch_ev.jpg",
+    "image_path": "/cars/tata_punch_ev.jpg",
+    "queries": [
+      "Tata Punch EV India official",
+      "Tata Punch EV ev India",
+      "Tata Punch EV India car",
+      "Tata Punch EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA010",
+    "vehicle_name": "Altroz",
+    "brand": "Tata",
+    "fuel_type": "petrol",
+    "image_filename": "tata_altroz.jpg",
+    "image_path": "/cars/tata_altroz.jpg",
+    "queries": [
+      "Tata Altroz India official",
+      "Tata Altroz petrol India",
+      "Tata Altroz India car",
+      "Tata Altroz official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA011",
+    "vehicle_name": "Altroz CNG",
+    "brand": "Tata",
+    "fuel_type": "cng",
+    "image_filename": "tata_altroz_cng.jpg",
+    "image_path": "/cars/tata_altroz_cng.jpg",
+    "queries": [
+      "Tata Altroz CNG India official",
+      "Tata Altroz CNG cng India",
+      "Tata Altroz CNG India car",
+      "Tata Altroz CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA012",
+    "vehicle_name": "Nexon",
+    "brand": "Tata",
+    "fuel_type": "petrol",
+    "image_filename": "tata_nexon.jpg",
+    "image_path": "/cars/tata_nexon.jpg",
+    "queries": [
+      "Tata Nexon India official",
+      "Tata Nexon petrol India",
+      "Tata Nexon India car",
+      "Tata Nexon official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA013",
+    "vehicle_name": "Nexon CNG",
+    "brand": "Tata",
+    "fuel_type": "cng",
+    "image_filename": "tata_nexon_cng.jpg",
+    "image_path": "/cars/tata_nexon_cng.jpg",
+    "queries": [
+      "Tata Nexon CNG India official",
+      "Tata Nexon CNG cng India",
+      "Tata Nexon CNG India car",
+      "Tata Nexon CNG official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA014",
+    "vehicle_name": "Nexon EV",
+    "brand": "Tata",
+    "fuel_type": "ev",
+    "image_filename": "tata_nexon_ev.jpg",
+    "image_path": "/cars/tata_nexon_ev.jpg",
+    "queries": [
+      "Tata Nexon EV India official",
+      "Tata Nexon EV ev India",
+      "Tata Nexon EV India car",
+      "Tata Nexon EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA015",
+    "vehicle_name": "Curvv",
+    "brand": "Tata",
+    "fuel_type": "petrol",
+    "image_filename": "tata_curvv.jpg",
+    "image_path": "/cars/tata_curvv.jpg",
+    "queries": [
+      "Tata Curvv India official",
+      "Tata Curvv petrol India",
+      "Tata Curvv India car",
+      "Tata Curvv official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA016",
+    "vehicle_name": "Curvv EV",
+    "brand": "Tata",
+    "fuel_type": "ev",
+    "image_filename": "tata_curvv_ev.jpg",
+    "image_path": "/cars/tata_curvv_ev.jpg",
+    "queries": [
+      "Tata Curvv EV India official",
+      "Tata Curvv EV ev India",
+      "Tata Curvv EV India car",
+      "Tata Curvv EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA017",
+    "vehicle_name": "Harrier Diesel",
+    "brand": "Tata",
+    "fuel_type": "diesel",
+    "image_filename": "tata_harrier_diesel.jpg",
+    "image_path": "/cars/tata_harrier_diesel.jpg",
+    "queries": [
+      "Tata Harrier Diesel India official",
+      "Tata Harrier Diesel diesel India",
+      "Tata Harrier Diesel India car",
+      "Tata Harrier Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "TA018",
+    "vehicle_name": "Safari Diesel",
+    "brand": "Tata",
+    "fuel_type": "diesel",
+    "image_filename": "tata_safari_diesel.jpg",
+    "image_path": "/cars/tata_safari_diesel.jpg",
+    "queries": [
+      "Tata Safari Diesel India official",
+      "Tata Safari Diesel diesel India",
+      "Tata Safari Diesel India car",
+      "Tata Safari Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA001",
+    "vehicle_name": "XUV 3XO",
+    "brand": "Mahindra",
+    "fuel_type": "petrol",
+    "image_filename": "mahindra_xuv_3xo.jpg",
+    "image_path": "/cars/mahindra_xuv_3xo.jpg",
+    "queries": [
+      "Mahindra XUV 3XO India official",
+      "Mahindra XUV 3XO petrol India",
+      "Mahindra XUV 3XO India car",
+      "Mahindra XUV 3XO official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA002",
+    "vehicle_name": "XUV 3XO Diesel",
+    "brand": "Mahindra",
+    "fuel_type": "diesel",
+    "image_filename": "mahindra_xuv_3xo_diesel.jpg",
+    "image_path": "/cars/mahindra_xuv_3xo_diesel.jpg",
+    "queries": [
+      "Mahindra XUV 3XO Diesel India official",
+      "Mahindra XUV 3XO Diesel diesel India",
+      "Mahindra XUV 3XO Diesel India car",
+      "Mahindra XUV 3XO Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA003",
+    "vehicle_name": "Bolero",
+    "brand": "Mahindra",
+    "fuel_type": "diesel",
+    "image_filename": "mahindra_bolero.jpg",
+    "image_path": "/cars/mahindra_bolero.jpg",
+    "queries": [
+      "Mahindra Bolero India official",
+      "Mahindra Bolero diesel India",
+      "Mahindra Bolero India car",
+      "Mahindra Bolero official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA004",
+    "vehicle_name": "Scorpio-N",
+    "brand": "Mahindra",
+    "fuel_type": "diesel",
+    "image_filename": "mahindra_scorpio_n.jpg",
+    "image_path": "/cars/mahindra_scorpio_n.jpg",
+    "queries": [
+      "Mahindra Scorpio-N India official",
+      "Mahindra Scorpio-N diesel India",
+      "Mahindra Scorpio-N India car",
+      "Mahindra Scorpio-N official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA005",
+    "vehicle_name": "Scorpio Classic",
+    "brand": "Mahindra",
+    "fuel_type": "diesel",
+    "image_filename": "mahindra_scorpio_classic.jpg",
+    "image_path": "/cars/mahindra_scorpio_classic.jpg",
+    "queries": [
+      "Mahindra Scorpio Classic India official",
+      "Mahindra Scorpio Classic diesel India",
+      "Mahindra Scorpio Classic India car",
+      "Mahindra Scorpio Classic official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA006",
+    "vehicle_name": "XUV700 Petrol",
+    "brand": "Mahindra",
+    "fuel_type": "petrol",
+    "image_filename": "mahindra_xuv700_petrol.jpg",
+    "image_path": "/cars/mahindra_xuv700_petrol.jpg",
+    "queries": [
+      "Mahindra XUV700 Petrol India official",
+      "Mahindra XUV700 Petrol petrol India",
+      "Mahindra XUV700 Petrol India car",
+      "Mahindra XUV700 Petrol official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA007",
+    "vehicle_name": "XUV700 Diesel",
+    "brand": "Mahindra",
+    "fuel_type": "diesel",
+    "image_filename": "mahindra_xuv700_diesel.jpg",
+    "image_path": "/cars/mahindra_xuv700_diesel.jpg",
+    "queries": [
+      "Mahindra XUV700 Diesel India official",
+      "Mahindra XUV700 Diesel diesel India",
+      "Mahindra XUV700 Diesel India car",
+      "Mahindra XUV700 Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA008",
+    "vehicle_name": "Thar",
+    "brand": "Mahindra",
+    "fuel_type": "petrol",
+    "image_filename": "mahindra_thar.jpg",
+    "image_path": "/cars/mahindra_thar.jpg",
+    "queries": [
+      "Mahindra Thar India official",
+      "Mahindra Thar petrol India",
+      "Mahindra Thar India car",
+      "Mahindra Thar official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MA009",
+    "vehicle_name": "XUV400 EV",
+    "brand": "Mahindra",
+    "fuel_type": "ev",
+    "image_filename": "mahindra_xuv400_ev.jpg",
+    "image_path": "/cars/mahindra_xuv400_ev.jpg",
+    "queries": [
+      "Mahindra XUV400 EV India official",
+      "Mahindra XUV400 EV ev India",
+      "Mahindra XUV400 EV India car",
+      "Mahindra XUV400 EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "KI001",
+    "vehicle_name": "Sonet",
+    "brand": "Kia",
+    "fuel_type": "petrol",
+    "image_filename": "kia_sonet.jpg",
+    "image_path": "/cars/kia_sonet.jpg",
+    "queries": [
+      "Kia Sonet India official",
+      "Kia Sonet petrol India",
+      "Kia Sonet India car",
+      "Kia Sonet official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "KI002",
+    "vehicle_name": "Sonet Diesel",
+    "brand": "Kia",
+    "fuel_type": "diesel",
+    "image_filename": "kia_sonet_diesel.jpg",
+    "image_path": "/cars/kia_sonet_diesel.jpg",
+    "queries": [
+      "Kia Sonet Diesel India official",
+      "Kia Sonet Diesel diesel India",
+      "Kia Sonet Diesel India car",
+      "Kia Sonet Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "KI003",
+    "vehicle_name": "Seltos",
+    "brand": "Kia",
+    "fuel_type": "petrol",
+    "image_filename": "kia_seltos.jpg",
+    "image_path": "/cars/kia_seltos.jpg",
+    "queries": [
+      "Kia Seltos India official",
+      "Kia Seltos petrol India",
+      "Kia Seltos India car",
+      "Kia Seltos official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "KI004",
+    "vehicle_name": "Seltos Diesel",
+    "brand": "Kia",
+    "fuel_type": "diesel",
+    "image_filename": "kia_seltos_diesel.jpg",
+    "image_path": "/cars/kia_seltos_diesel.jpg",
+    "queries": [
+      "Kia Seltos Diesel India official",
+      "Kia Seltos Diesel diesel India",
+      "Kia Seltos Diesel India car",
+      "Kia Seltos Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "KI005",
+    "vehicle_name": "Carens",
+    "brand": "Kia",
+    "fuel_type": "petrol",
+    "image_filename": "kia_carens.jpg",
+    "image_path": "/cars/kia_carens.jpg",
+    "queries": [
+      "Kia Carens India official",
+      "Kia Carens petrol India",
+      "Kia Carens India car",
+      "Kia Carens official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "KI006",
+    "vehicle_name": "EV6",
+    "brand": "Kia",
+    "fuel_type": "ev",
+    "image_filename": "kia_ev6.jpg",
+    "image_path": "/cars/kia_ev6.jpg",
+    "queries": [
+      "Kia EV6 India official",
+      "Kia EV6 ev India",
+      "Kia EV6 India car",
+      "Kia EV6 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "RN001",
+    "vehicle_name": "Kwid",
+    "brand": "Renault",
+    "fuel_type": "petrol",
+    "image_filename": "renault_kwid.jpg",
+    "image_path": "/cars/renault_kwid.jpg",
+    "queries": [
+      "Renault Kwid India official",
+      "Renault Kwid petrol India",
+      "Renault Kwid India car",
+      "Renault Kwid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "RN002",
+    "vehicle_name": "Triber",
+    "brand": "Renault",
+    "fuel_type": "petrol",
+    "image_filename": "renault_triber.jpg",
+    "image_path": "/cars/renault_triber.jpg",
+    "queries": [
+      "Renault Triber India official",
+      "Renault Triber petrol India",
+      "Renault Triber India car",
+      "Renault Triber official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "RN003",
+    "vehicle_name": "Kiger",
+    "brand": "Renault",
+    "fuel_type": "petrol",
+    "image_filename": "renault_kiger.jpg",
+    "image_path": "/cars/renault_kiger.jpg",
+    "queries": [
+      "Renault Kiger India official",
+      "Renault Kiger petrol India",
+      "Renault Kiger India car",
+      "Renault Kiger official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "RN004",
+    "vehicle_name": "Magnite",
+    "brand": "Nissan",
+    "fuel_type": "petrol",
+    "image_filename": "nissan_magnite.jpg",
+    "image_path": "/cars/nissan_magnite.jpg",
+    "queries": [
+      "Nissan Magnite India official",
+      "Nissan Magnite petrol India",
+      "Nissan Magnite India car",
+      "Nissan Magnite official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "VW001",
+    "vehicle_name": "Virtus",
+    "brand": "Volkswagen",
+    "fuel_type": "petrol",
+    "image_filename": "volkswagen_virtus.jpg",
+    "image_path": "/cars/volkswagen_virtus.jpg",
+    "queries": [
+      "Volkswagen Virtus India official",
+      "Volkswagen Virtus petrol India",
+      "Volkswagen Virtus India car",
+      "Volkswagen Virtus official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "VW002",
+    "vehicle_name": "Taigun",
+    "brand": "Volkswagen",
+    "fuel_type": "petrol",
+    "image_filename": "volkswagen_taigun.jpg",
+    "image_path": "/cars/volkswagen_taigun.jpg",
+    "queries": [
+      "Volkswagen Taigun India official",
+      "Volkswagen Taigun petrol India",
+      "Volkswagen Taigun India car",
+      "Volkswagen Taigun official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "SK001",
+    "vehicle_name": "Slavia",
+    "brand": "Skoda",
+    "fuel_type": "petrol",
+    "image_filename": "skoda_slavia.jpg",
+    "image_path": "/cars/skoda_slavia.jpg",
+    "queries": [
+      "Skoda Slavia India official",
+      "Skoda Slavia petrol India",
+      "Skoda Slavia India car",
+      "Skoda Slavia official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "SK002",
+    "vehicle_name": "Kushaq",
+    "brand": "Skoda",
+    "fuel_type": "petrol",
+    "image_filename": "skoda_kushaq.jpg",
+    "image_path": "/cars/skoda_kushaq.jpg",
+    "queries": [
+      "Skoda Kushaq India official",
+      "Skoda Kushaq petrol India",
+      "Skoda Kushaq India car",
+      "Skoda Kushaq official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MG001",
+    "vehicle_name": "Comet EV",
+    "brand": "MG",
+    "fuel_type": "ev",
+    "image_filename": "mg_comet_ev.jpg",
+    "image_path": "/cars/mg_comet_ev.jpg",
+    "queries": [
+      "MG Comet EV India official",
+      "MG Comet EV ev India",
+      "MG Comet EV India car",
+      "MG Comet EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MG002",
+    "vehicle_name": "Windsor EV",
+    "brand": "MG",
+    "fuel_type": "ev",
+    "image_filename": "mg_windsor_ev.jpg",
+    "image_path": "/cars/mg_windsor_ev.jpg",
+    "queries": [
+      "MG Windsor EV India official",
+      "MG Windsor EV ev India",
+      "MG Windsor EV India car",
+      "MG Windsor EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MG003",
+    "vehicle_name": "ZS EV",
+    "brand": "MG",
+    "fuel_type": "ev",
+    "image_filename": "mg_zs_ev.jpg",
+    "image_path": "/cars/mg_zs_ev.jpg",
+    "queries": [
+      "MG ZS EV India official",
+      "MG ZS EV ev India",
+      "MG ZS EV India car",
+      "MG ZS EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MG004",
+    "vehicle_name": "Hector",
+    "brand": "MG",
+    "fuel_type": "petrol",
+    "image_filename": "mg_hector.jpg",
+    "image_path": "/cars/mg_hector.jpg",
+    "queries": [
+      "MG Hector India official",
+      "MG Hector petrol India",
+      "MG Hector India car",
+      "MG Hector official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "BY001",
+    "vehicle_name": "Atto 3",
+    "brand": "BYD",
+    "fuel_type": "ev",
+    "image_filename": "byd_atto_3.jpg",
+    "image_path": "/cars/byd_atto_3.jpg",
+    "queries": [
+      "BYD Atto 3 India official",
+      "BYD Atto 3 ev India",
+      "BYD Atto 3 India car",
+      "BYD Atto 3 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "BY002",
+    "vehicle_name": "Seal",
+    "brand": "BYD",
+    "fuel_type": "ev",
+    "image_filename": "byd_seal.jpg",
+    "image_path": "/cars/byd_seal.jpg",
+    "queries": [
+      "BYD Seal India official",
+      "BYD Seal ev India",
+      "BYD Seal India car",
+      "BYD Seal official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "BY003",
+    "vehicle_name": "eMAX 7",
+    "brand": "BYD",
+    "fuel_type": "ev",
+    "image_filename": "byd_emax_7.jpg",
+    "image_path": "/cars/byd_emax_7.jpg",
+    "queries": [
+      "BYD eMAX 7 India official",
+      "BYD eMAX 7 ev India",
+      "BYD eMAX 7 India car",
+      "BYD eMAX 7 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LX001",
+    "vehicle_name": "Lexus ES 300h",
+    "brand": "Lexus",
+    "fuel_type": "hybrid",
+    "image_filename": "lexus_lexus_es_300h.jpg",
+    "image_path": "/cars/lexus_lexus_es_300h.jpg",
+    "queries": [
+      "Lexus Lexus ES 300h India official",
+      "Lexus Lexus ES 300h hybrid India",
+      "Lexus Lexus ES 300h India car",
+      "Lexus Lexus ES 300h official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LX002",
+    "vehicle_name": "Lexus NX 350h",
+    "brand": "Lexus",
+    "fuel_type": "hybrid",
+    "image_filename": "lexus_lexus_nx_350h.jpg",
+    "image_path": "/cars/lexus_lexus_nx_350h.jpg",
+    "queries": [
+      "Lexus Lexus NX 350h India official",
+      "Lexus Lexus NX 350h hybrid India",
+      "Lexus Lexus NX 350h India car",
+      "Lexus Lexus NX 350h official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "VO001",
+    "vehicle_name": "XC40 Recharge",
+    "brand": "Volvo",
+    "fuel_type": "ev",
+    "image_filename": "volvo_xc40_recharge.jpg",
+    "image_path": "/cars/volvo_xc40_recharge.jpg",
+    "queries": [
+      "Volvo XC40 Recharge India official",
+      "Volvo XC40 Recharge ev India",
+      "Volvo XC40 Recharge India car",
+      "Volvo XC40 Recharge official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "BM001",
+    "vehicle_name": "BMW 2 Series Gran Coupe",
+    "brand": "BMW",
+    "fuel_type": "petrol",
+    "image_filename": "bmw_bmw_2_series_gran_coupe.jpg",
+    "image_path": "/cars/bmw_bmw_2_series_gran_coupe.jpg",
+    "queries": [
+      "BMW BMW 2 Series Gran Coupe India official",
+      "BMW BMW 2 Series Gran Coupe petrol India",
+      "BMW BMW 2 Series Gran Coupe India car",
+      "BMW BMW 2 Series Gran Coupe official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "BM002",
+    "vehicle_name": "BMW 3 Series",
+    "brand": "BMW",
+    "fuel_type": "petrol",
+    "image_filename": "bmw_bmw_3_series.jpg",
+    "image_path": "/cars/bmw_bmw_3_series.jpg",
+    "queries": [
+      "BMW BMW 3 Series India official",
+      "BMW BMW 3 Series petrol India",
+      "BMW BMW 3 Series India car",
+      "BMW BMW 3 Series official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "MB001",
+    "vehicle_name": "Mercedes A-Class Limousine",
+    "brand": "Mercedes-Benz",
+    "fuel_type": "petrol",
+    "image_filename": "mercedes_benz_mercedes_a_class_limousine.jpg",
+    "image_path": "/cars/mercedes_benz_mercedes_a_class_limousine.jpg",
+    "queries": [
+      "Mercedes-Benz Mercedes A-Class Limousine India official",
+      "Mercedes-Benz Mercedes A-Class Limousine petrol India",
+      "Mercedes-Benz Mercedes A-Class Limousine India car",
+      "Mercedes-Benz Mercedes A-Class Limousine official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "AU001",
+    "vehicle_name": "Audi A4",
+    "brand": "Audi",
+    "fuel_type": "petrol",
+    "image_filename": "audi_audi_a4.jpg",
+    "image_path": "/cars/audi_audi_a4.jpg",
+    "queries": [
+      "Audi Audi A4 India official",
+      "Audi Audi A4 petrol India",
+      "Audi Audi A4 India car",
+      "Audi Audi A4 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "JE001",
+    "vehicle_name": "Jeep Compass Diesel",
+    "brand": "Jeep",
+    "fuel_type": "diesel",
+    "image_filename": "jeep_jeep_compass_diesel.jpg",
+    "image_path": "/cars/jeep_jeep_compass_diesel.jpg",
+    "queries": [
+      "Jeep Jeep Compass Diesel India official",
+      "Jeep Jeep Compass Diesel diesel India",
+      "Jeep Jeep Compass Diesel India car",
+      "Jeep Jeep Compass Diesel official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "IS001",
+    "vehicle_name": "Isuzu D-Max",
+    "brand": "Isuzu",
+    "fuel_type": "diesel",
+    "image_filename": "isuzu_isuzu_d_max.jpg",
+    "image_path": "/cars/isuzu_isuzu_d_max.jpg",
+    "queries": [
+      "Isuzu Isuzu D-Max India official",
+      "Isuzu Isuzu D-Max diesel India",
+      "Isuzu Isuzu D-Max India car",
+      "Isuzu Isuzu D-Max official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "FO001",
+    "vehicle_name": "Force Gurkha",
+    "brand": "Force Motors",
+    "fuel_type": "diesel",
+    "image_filename": "force_motors_force_gurkha.jpg",
+    "image_path": "/cars/force_motors_force_gurkha.jpg",
+    "queries": [
+      "Force Motors Force Gurkha India official",
+      "Force Motors Force Gurkha diesel India",
+      "Force Motors Force Gurkha India car",
+      "Force Motors Force Gurkha official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "V030",
+    "vehicle_name": "Pre-Owned Swift VXi (2020)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_pre_owned_swift_vxi_2020.jpg",
+    "image_path": "/cars/maruti_suzuki_pre_owned_swift_vxi_2020.jpg",
+    "queries": [
+      "Maruti Suzuki Pre-Owned Swift VXi (2020) India official",
+      "Maruti Suzuki Pre-Owned Swift VXi (2020) petrol India",
+      "Maruti Suzuki Pre-Owned Swift VXi (2020) India car",
+      "Maruti Suzuki Pre-Owned Swift VXi (2020) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "V031",
+    "vehicle_name": "Pre-Owned City VX (2019)",
+    "brand": "Honda",
+    "fuel_type": "petrol",
+    "image_filename": "honda_pre_owned_city_vx_2019.jpg",
+    "image_path": "/cars/honda_pre_owned_city_vx_2019.jpg",
+    "queries": [
+      "Honda Pre-Owned City VX (2019) India official",
+      "Honda Pre-Owned City VX (2019) petrol India",
+      "Honda Pre-Owned City VX (2019) India car",
+      "Honda Pre-Owned City VX (2019) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "V032",
+    "vehicle_name": "Pre-Owned Creta SX Diesel (2019)",
+    "brand": "Hyundai",
+    "fuel_type": "diesel",
+    "image_filename": "hyundai_pre_owned_creta_sx_diesel_2019.jpg",
+    "image_path": "/cars/hyundai_pre_owned_creta_sx_diesel_2019.jpg",
+    "queries": [
+      "Hyundai Pre-Owned Creta SX Diesel (2019) India official",
+      "Hyundai Pre-Owned Creta SX Diesel (2019) diesel India",
+      "Hyundai Pre-Owned Creta SX Diesel (2019) India car",
+      "Hyundai Pre-Owned Creta SX Diesel (2019) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "V033",
+    "vehicle_name": "Pre-Owned Wagon R CNG (2021)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_pre_owned_wagon_r_cng_2021.jpg",
+    "image_path": "/cars/maruti_suzuki_pre_owned_wagon_r_cng_2021.jpg",
+    "queries": [
+      "Maruti Suzuki Pre-Owned Wagon R CNG (2021) India official",
+      "Maruti Suzuki Pre-Owned Wagon R CNG (2021) cng India",
+      "Maruti Suzuki Pre-Owned Wagon R CNG (2021) India car",
+      "Maruti Suzuki Pre-Owned Wagon R CNG (2021) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "V034",
+    "vehicle_name": "Pre-Owned Nexon EV XZ+ (2021)",
+    "brand": "Tata",
+    "fuel_type": "ev",
+    "image_filename": "tata_pre_owned_nexon_ev_xz_2021.jpg",
+    "image_path": "/cars/tata_pre_owned_nexon_ev_xz_2021.jpg",
+    "queries": [
+      "Tata Pre-Owned Nexon EV XZ+ (2021) India official",
+      "Tata Pre-Owned Nexon EV XZ+ (2021) ev India",
+      "Tata Pre-Owned Nexon EV XZ+ (2021) India car",
+      "Tata Pre-Owned Nexon EV XZ+ (2021) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "V035",
+    "vehicle_name": "Pre-Owned Baleno Alpha (2020)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_pre_owned_baleno_alpha_2020.jpg",
+    "image_path": "/cars/maruti_suzuki_pre_owned_baleno_alpha_2020.jpg",
+    "queries": [
+      "Maruti Suzuki Pre-Owned Baleno Alpha (2020) India official",
+      "Maruti Suzuki Pre-Owned Baleno Alpha (2020) petrol India",
+      "Maruti Suzuki Pre-Owned Baleno Alpha (2020) India car",
+      "Maruti Suzuki Pre-Owned Baleno Alpha (2020) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U001",
+    "vehicle_name": "Used Maruti 800 STD (2006)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_used_maruti_800_std_2006.jpg",
+    "image_path": "/cars/maruti_suzuki_used_maruti_800_std_2006.jpg",
+    "queries": [
+      "Maruti Suzuki Used Maruti 800 STD (2006) India official",
+      "Maruti Suzuki Used Maruti 800 STD (2006) petrol India",
+      "Maruti Suzuki Used Maruti 800 STD (2006) India car",
+      "Maruti Suzuki Used Maruti 800 STD (2006) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U002",
+    "vehicle_name": "Used Hyundai Santro Xing (2008)",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_used_hyundai_santro_xing_2008.jpg",
+    "image_path": "/cars/hyundai_used_hyundai_santro_xing_2008.jpg",
+    "queries": [
+      "Hyundai Used Hyundai Santro Xing (2008) India official",
+      "Hyundai Used Hyundai Santro Xing (2008) petrol India",
+      "Hyundai Used Hyundai Santro Xing (2008) India car",
+      "Hyundai Used Hyundai Santro Xing (2008) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U003",
+    "vehicle_name": "Used Maruti Zen Estilo (2009)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_used_maruti_zen_estilo_2009.jpg",
+    "image_path": "/cars/maruti_suzuki_used_maruti_zen_estilo_2009.jpg",
+    "queries": [
+      "Maruti Suzuki Used Maruti Zen Estilo (2009) India official",
+      "Maruti Suzuki Used Maruti Zen Estilo (2009) petrol India",
+      "Maruti Suzuki Used Maruti Zen Estilo (2009) India car",
+      "Maruti Suzuki Used Maruti Zen Estilo (2009) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U004",
+    "vehicle_name": "Used Wagon R LXi CNG (2010)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "cng",
+    "image_filename": "maruti_suzuki_used_wagon_r_lxi_cng_2010.jpg",
+    "image_path": "/cars/maruti_suzuki_used_wagon_r_lxi_cng_2010.jpg",
+    "queries": [
+      "Maruti Suzuki Used Wagon R LXi CNG (2010) India official",
+      "Maruti Suzuki Used Wagon R LXi CNG (2010) cng India",
+      "Maruti Suzuki Used Wagon R LXi CNG (2010) India car",
+      "Maruti Suzuki Used Wagon R LXi CNG (2010) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U005",
+    "vehicle_name": "Used Maruti Alto 800 LXi (2014)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_used_maruti_alto_800_lxi_2014.jpg",
+    "image_path": "/cars/maruti_suzuki_used_maruti_alto_800_lxi_2014.jpg",
+    "queries": [
+      "Maruti Suzuki Used Maruti Alto 800 LXi (2014) India official",
+      "Maruti Suzuki Used Maruti Alto 800 LXi (2014) petrol India",
+      "Maruti Suzuki Used Maruti Alto 800 LXi (2014) India car",
+      "Maruti Suzuki Used Maruti Alto 800 LXi (2014) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U006",
+    "vehicle_name": "Used Hyundai Eon Era+ (2015)",
+    "brand": "Hyundai",
+    "fuel_type": "petrol",
+    "image_filename": "hyundai_used_hyundai_eon_era_2015.jpg",
+    "image_path": "/cars/hyundai_used_hyundai_eon_era_2015.jpg",
+    "queries": [
+      "Hyundai Used Hyundai Eon Era+ (2015) India official",
+      "Hyundai Used Hyundai Eon Era+ (2015) petrol India",
+      "Hyundai Used Hyundai Eon Era+ (2015) India car",
+      "Hyundai Used Hyundai Eon Era+ (2015) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U007",
+    "vehicle_name": "Used Swift VDi Diesel (2013)",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "diesel",
+    "image_filename": "maruti_suzuki_used_swift_vdi_diesel_2013.jpg",
+    "image_path": "/cars/maruti_suzuki_used_swift_vdi_diesel_2013.jpg",
+    "queries": [
+      "Maruti Suzuki Used Swift VDi Diesel (2013) India official",
+      "Maruti Suzuki Used Swift VDi Diesel (2013) diesel India",
+      "Maruti Suzuki Used Swift VDi Diesel (2013) India car",
+      "Maruti Suzuki Used Swift VDi Diesel (2013) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "U008",
+    "vehicle_name": "Pre-Owned Fortuner 3.0 4x2 Diesel (2016)",
+    "brand": "Toyota",
+    "fuel_type": "diesel",
+    "image_filename": "toyota_pre_owned_fortuner_3_0_4x2_diesel_2016.jpg",
+    "image_path": "/cars/toyota_pre_owned_fortuner_3_0_4x2_diesel_2016.jpg",
+    "queries": [
+      "Toyota Pre-Owned Fortuner 3.0 4x2 Diesel (2016) India official",
+      "Toyota Pre-Owned Fortuner 3.0 4x2 Diesel (2016) diesel India",
+      "Toyota Pre-Owned Fortuner 3.0 4x2 Diesel (2016) India car",
+      "Toyota Pre-Owned Fortuner 3.0 4x2 Diesel (2016) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "L001",
+    "vehicle_name": "Rolls-Royce Spectre EV",
+    "brand": "Rolls-Royce",
+    "fuel_type": "ev",
+    "image_filename": "rolls_royce_rolls_royce_spectre_ev.jpg",
+    "image_path": "/cars/rolls_royce_rolls_royce_spectre_ev.jpg",
+    "queries": [
+      "Rolls-Royce Rolls-Royce Spectre EV India official",
+      "Rolls-Royce Rolls-Royce Spectre EV ev India",
+      "Rolls-Royce Rolls-Royce Spectre EV India car",
+      "Rolls-Royce Rolls-Royce Spectre EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "L002",
+    "vehicle_name": "Rolls-Royce Phantom VIII",
+    "brand": "Rolls-Royce",
+    "fuel_type": "petrol",
+    "image_filename": "rolls_royce_rolls_royce_phantom_viii.jpg",
+    "image_path": "/cars/rolls_royce_rolls_royce_phantom_viii.jpg",
+    "queries": [
+      "Rolls-Royce Rolls-Royce Phantom VIII India official",
+      "Rolls-Royce Rolls-Royce Phantom VIII petrol India",
+      "Rolls-Royce Rolls-Royce Phantom VIII India car",
+      "Rolls-Royce Rolls-Royce Phantom VIII official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "L003",
+    "vehicle_name": "Lamborghini Revuelto V12 Hybrid",
+    "brand": "Lamborghini",
+    "fuel_type": "hybrid",
+    "image_filename": "lamborghini_lamborghini_revuelto_v12_hybrid.jpg",
+    "image_path": "/cars/lamborghini_lamborghini_revuelto_v12_hybrid.jpg",
+    "queries": [
+      "Lamborghini Lamborghini Revuelto V12 Hybrid India official",
+      "Lamborghini Lamborghini Revuelto V12 Hybrid hybrid India",
+      "Lamborghini Lamborghini Revuelto V12 Hybrid India car",
+      "Lamborghini Lamborghini Revuelto V12 Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "L004",
+    "vehicle_name": "Ferrari 296 GTB Hybrid",
+    "brand": "Ferrari",
+    "fuel_type": "hybrid",
+    "image_filename": "ferrari_ferrari_296_gtb_hybrid.jpg",
+    "image_path": "/cars/ferrari_ferrari_296_gtb_hybrid.jpg",
+    "queries": [
+      "Ferrari Ferrari 296 GTB Hybrid India official",
+      "Ferrari Ferrari 296 GTB Hybrid hybrid India",
+      "Ferrari Ferrari 296 GTB Hybrid India car",
+      "Ferrari Ferrari 296 GTB Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "L005",
+    "vehicle_name": "Bentley Continental GT Speed",
+    "brand": "Bentley",
+    "fuel_type": "petrol",
+    "image_filename": "bentley_bentley_continental_gt_speed.jpg",
+    "image_path": "/cars/bentley_bentley_continental_gt_speed.jpg",
+    "queries": [
+      "Bentley Bentley Continental GT Speed India official",
+      "Bentley Bentley Continental GT Speed petrol India",
+      "Bentley Bentley Continental GT Speed India car",
+      "Bentley Bentley Continental GT Speed official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "L006",
+    "vehicle_name": "Mercedes-Maybach S 680 V12",
+    "brand": "Mercedes-Benz",
+    "fuel_type": "petrol",
+    "image_filename": "mercedes_benz_mercedes_maybach_s_680_v12.jpg",
+    "image_path": "/cars/mercedes_benz_mercedes_maybach_s_680_v12.jpg",
+    "queries": [
+      "Mercedes-Benz Mercedes-Maybach S 680 V12 India official",
+      "Mercedes-Benz Mercedes-Maybach S 680 V12 petrol India",
+      "Mercedes-Benz Mercedes-Maybach S 680 V12 India car",
+      "Mercedes-Benz Mercedes-Maybach S 680 V12 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "L007",
+    "vehicle_name": "Porsche 911 GT3 RS",
+    "brand": "Porsche",
+    "fuel_type": "petrol",
+    "image_filename": "porsche_porsche_911_gt3_rs.jpg",
+    "image_path": "/cars/porsche_porsche_911_gt3_rs.jpg",
+    "queries": [
+      "Porsche Porsche 911 GT3 RS India official",
+      "Porsche Porsche 911 GT3 RS petrol India",
+      "Porsche Porsche 911 GT3 RS India car",
+      "Porsche Porsche 911 GT3 RS official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX001",
+    "vehicle_name": "5 Series (530Li)",
+    "brand": "BMW",
+    "fuel_type": "petrol",
+    "image_filename": "bmw_5_series_530li.jpg",
+    "image_path": "/cars/bmw_5_series_530li.jpg",
+    "queries": [
+      "BMW 5 Series (530Li) India official",
+      "BMW 5 Series (530Li) petrol India",
+      "BMW 5 Series (530Li) India car",
+      "BMW 5 Series (530Li) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX002",
+    "vehicle_name": "E-Class (E 200)",
+    "brand": "Mercedes-Benz",
+    "fuel_type": "petrol",
+    "image_filename": "mercedes_benz_e_class_e_200.jpg",
+    "image_path": "/cars/mercedes_benz_e_class_e_200.jpg",
+    "queries": [
+      "Mercedes-Benz E-Class (E 200) India official",
+      "Mercedes-Benz E-Class (E 200) petrol India",
+      "Mercedes-Benz E-Class (E 200) India car",
+      "Mercedes-Benz E-Class (E 200) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX003",
+    "vehicle_name": "Audi A6 (45 TFSI)",
+    "brand": "Audi",
+    "fuel_type": "petrol",
+    "image_filename": "audi_audi_a6_45_tfsi.jpg",
+    "image_path": "/cars/audi_audi_a6_45_tfsi.jpg",
+    "queries": [
+      "Audi Audi A6 (45 TFSI) India official",
+      "Audi Audi A6 (45 TFSI) petrol India",
+      "Audi Audi A6 (45 TFSI) India car",
+      "Audi Audi A6 (45 TFSI) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX004",
+    "vehicle_name": "BMW X5 (xDrive40i)",
+    "brand": "BMW",
+    "fuel_type": "petrol",
+    "image_filename": "bmw_bmw_x5_xdrive40i.jpg",
+    "image_path": "/cars/bmw_bmw_x5_xdrive40i.jpg",
+    "queries": [
+      "BMW BMW X5 (xDrive40i) India official",
+      "BMW BMW X5 (xDrive40i) petrol India",
+      "BMW BMW X5 (xDrive40i) India car",
+      "BMW BMW X5 (xDrive40i) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX005",
+    "vehicle_name": "Mercedes-Benz GLE 450",
+    "brand": "Mercedes-Benz",
+    "fuel_type": "petrol",
+    "image_filename": "mercedes_benz_mercedes_benz_gle_450.jpg",
+    "image_path": "/cars/mercedes_benz_mercedes_benz_gle_450.jpg",
+    "queries": [
+      "Mercedes-Benz Mercedes-Benz GLE 450 India official",
+      "Mercedes-Benz Mercedes-Benz GLE 450 petrol India",
+      "Mercedes-Benz Mercedes-Benz GLE 450 India car",
+      "Mercedes-Benz Mercedes-Benz GLE 450 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX006",
+    "vehicle_name": "Land Rover Defender 110",
+    "brand": "Land Rover",
+    "fuel_type": "diesel",
+    "image_filename": "land_rover_land_rover_defender_110.jpg",
+    "image_path": "/cars/land_rover_land_rover_defender_110.jpg",
+    "queries": [
+      "Land Rover Land Rover Defender 110 India official",
+      "Land Rover Land Rover Defender 110 diesel India",
+      "Land Rover Land Rover Defender 110 India car",
+      "Land Rover Land Rover Defender 110 official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX007",
+    "vehicle_name": "Porsche Macan EV",
+    "brand": "Porsche",
+    "fuel_type": "ev",
+    "image_filename": "porsche_porsche_macan_ev.jpg",
+    "image_path": "/cars/porsche_porsche_macan_ev.jpg",
+    "queries": [
+      "Porsche Porsche Macan EV India official",
+      "Porsche Porsche Macan EV ev India",
+      "Porsche Porsche Macan EV India car",
+      "Porsche Porsche Macan EV official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX008",
+    "vehicle_name": "Volvo XC90 Recharge Hybrid",
+    "brand": "Volvo",
+    "fuel_type": "hybrid",
+    "image_filename": "volvo_volvo_xc90_recharge_hybrid.jpg",
+    "image_path": "/cars/volvo_volvo_xc90_recharge_hybrid.jpg",
+    "queries": [
+      "Volvo Volvo XC90 Recharge Hybrid India official",
+      "Volvo Volvo XC90 Recharge Hybrid hybrid India",
+      "Volvo Volvo XC90 Recharge Hybrid India car",
+      "Volvo Volvo XC90 Recharge Hybrid official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX009",
+    "vehicle_name": "Audi Q7 (55 TFSI)",
+    "brand": "Audi",
+    "fuel_type": "petrol",
+    "image_filename": "audi_audi_q7_55_tfsi.jpg",
+    "image_path": "/cars/audi_audi_q7_55_tfsi.jpg",
+    "queries": [
+      "Audi Audi Q7 (55 TFSI) India official",
+      "Audi Audi Q7 (55 TFSI) petrol India",
+      "Audi Audi Q7 (55 TFSI) India car",
+      "Audi Audi Q7 (55 TFSI) official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX010",
+    "vehicle_name": "Lexus RX 500h F-Sport",
+    "brand": "Lexus",
+    "fuel_type": "hybrid",
+    "image_filename": "lexus_lexus_rx_500h_f_sport.jpg",
+    "image_path": "/cars/lexus_lexus_rx_500h_f_sport.jpg",
+    "queries": [
+      "Lexus Lexus RX 500h F-Sport India official",
+      "Lexus Lexus RX 500h F-Sport hybrid India",
+      "Lexus Lexus RX 500h F-Sport India car",
+      "Lexus Lexus RX 500h F-Sport official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX011",
+    "vehicle_name": "Jaguar F-Pace",
+    "brand": "Jaguar",
+    "fuel_type": "petrol",
+    "image_filename": "jaguar_jaguar_f_pace.jpg",
+    "image_path": "/cars/jaguar_jaguar_f_pace.jpg",
+    "queries": [
+      "Jaguar Jaguar F-Pace India official",
+      "Jaguar Jaguar F-Pace petrol India",
+      "Jaguar Jaguar F-Pace India car",
+      "Jaguar Jaguar F-Pace official India"
+    ],
+    "status": "PENDING"
+  },
+  {
+    "vehicle_id": "LUX012",
+    "vehicle_name": "Porsche Cayenne Coupe",
+    "brand": "Porsche",
+    "fuel_type": "petrol",
+    "image_filename": "porsche_porsche_cayenne_coupe.jpg",
+    "image_path": "/cars/porsche_porsche_cayenne_coupe.jpg",
+    "queries": [
+      "Porsche Porsche Cayenne Coupe India official",
+      "Porsche Porsche Cayenne Coupe petrol India",
+      "Porsche Porsche Cayenne Coupe India car",
+      "Porsche Porsche Cayenne Coupe official India"
+    ],
+    "status": "PENDING"
+  }
+]

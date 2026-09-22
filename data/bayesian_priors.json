@@ -1,0 +1,117 @@
+{
+  "_metadata": {
+    "description": "Bayesian priors and likelihood tables for reasoning under uncertainty. Used to compute posterior probabilities for uncertain facts like charging feasibility and vehicle type suitability.",
+    "version": "1.0"
+  },
+  "nodes": {
+    "charging_feasibility": {
+      "description": "Whether the user can conveniently charge an EV at or near home",
+      "states": ["available", "uncertain", "unavailable"],
+      "prior": [0.40, 0.35, 0.25],
+      "evidence_factors": {
+        "parking": {
+          "private_house":               {"likelihood": [0.75, 0.15, 0.10]},
+          "apartment_with_dedicated":    {"likelihood": [0.50, 0.30, 0.20]},
+          "apartment_without_dedicated": {"likelihood": [0.15, 0.40, 0.45]},
+          "street_parking":              {"likelihood": [0.05, 0.20, 0.75]},
+          "unknown":                     {"likelihood": [0.33, 0.34, 0.33]}
+        },
+        "charging_knowledge": {
+          "available":    {"likelihood": [0.90, 0.08, 0.02]},
+          "at_work":      {"likelihood": [0.55, 0.30, 0.15]},
+          "public_only":  {"likelihood": [0.25, 0.45, 0.30]},
+          "unavailable":  {"likelihood": [0.05, 0.15, 0.80]},
+          "unknown":      {"likelihood": [0.25, 0.50, 0.25]}
+        }
+      }
+    },
+    "ev_suitability": {
+      "description": "Overall suitability of EV for this user",
+      "states": ["high", "moderate", "low"],
+      "prior": [0.33, 0.34, 0.33],
+      "evidence_factors": {
+        "charging_feasibility_state": {
+          "available":    {"likelihood": [0.80, 0.15, 0.05]},
+          "uncertain":    {"likelihood": [0.25, 0.50, 0.25]},
+          "unavailable":  {"likelihood": [0.05, 0.15, 0.80]}
+        },
+        "daily_usage_level": {
+          "low":       {"likelihood": [0.70, 0.25, 0.05]},
+          "medium":    {"likelihood": [0.60, 0.30, 0.10]},
+          "high":      {"likelihood": [0.40, 0.35, 0.25]},
+          "very_high": {"likelihood": [0.20, 0.30, 0.50]}
+        },
+        "long_distance_level": {
+          "rare":       {"likelihood": [0.65, 0.25, 0.10]},
+          "occasional": {"likelihood": [0.35, 0.40, 0.25]},
+          "frequent":   {"likelihood": [0.15, 0.30, 0.55]}
+        }
+      }
+    },
+    "diesel_suitability": {
+      "description": "Whether diesel is suitable for user driving patterns",
+      "states": ["high", "moderate", "low"],
+      "prior": [0.33, 0.34, 0.33],
+      "evidence_factors": {
+        "daily_usage_level": {
+          "low":       {"likelihood": [0.10, 0.25, 0.65]},
+          "medium":    {"likelihood": [0.25, 0.45, 0.30]},
+          "high":      {"likelihood": [0.60, 0.30, 0.10]},
+          "very_high": {"likelihood": [0.75, 0.20, 0.05]}
+        },
+        "driving_environment_type": {
+          "city":    {"likelihood": [0.20, 0.35, 0.45]},
+          "mixed":   {"likelihood": [0.40, 0.40, 0.20]},
+          "highway": {"likelihood": [0.70, 0.25, 0.05]}
+        },
+        "long_distance_level": {
+          "rare":       {"likelihood": [0.15, 0.30, 0.55]},
+          "occasional": {"likelihood": [0.35, 0.40, 0.25]},
+          "frequent":   {"likelihood": [0.65, 0.25, 0.10]}
+        }
+      }
+    },
+    "used_vehicle_preference": {
+      "description": "Whether a used vehicle is a suitable option",
+      "states": ["preferred", "acceptable", "not_preferred"],
+      "prior": [0.25, 0.50, 0.25],
+      "evidence_factors": {
+        "budget_level": {
+          "budget":  {"likelihood": [0.60, 0.30, 0.10]},
+          "medium":  {"likelihood": [0.30, 0.50, 0.20]},
+          "high":    {"likelihood": [0.15, 0.40, 0.45]},
+          "premium": {"likelihood": [0.10, 0.25, 0.65]}
+        },
+        "vehicle_condition_preference": {
+          "new_only":    {"likelihood": [0.05, 0.15, 0.80]},
+          "prefer_new":  {"likelihood": [0.15, 0.35, 0.50]},
+          "no_preference":{"likelihood": [0.35, 0.45, 0.20]},
+          "prefer_used": {"likelihood": [0.70, 0.25, 0.05]}
+        }
+      }
+    },
+    "cng_suitability": {
+      "description": "Whether CNG is suitable for user driving patterns and infrastructure",
+      "states": ["high", "moderate", "low"],
+      "prior": [0.33, 0.34, 0.33],
+      "evidence_factors": {
+        "daily_usage_level": {
+          "low":       {"likelihood": [0.15, 0.30, 0.55]},
+          "medium":    {"likelihood": [0.55, 0.35, 0.10]},
+          "high":      {"likelihood": [0.70, 0.20, 0.10]},
+          "very_high": {"likelihood": [0.65, 0.25, 0.10]}
+        },
+        "driving_environment_type": {
+          "city":    {"likelihood": [0.70, 0.25, 0.05]},
+          "mixed":   {"likelihood": [0.50, 0.35, 0.15]},
+          "highway": {"likelihood": [0.25, 0.35, 0.40]}
+        },
+        "fuel_station_access": {
+          "easy":      {"likelihood": [0.70, 0.25, 0.05]},
+          "moderate":  {"likelihood": [0.40, 0.40, 0.20]},
+          "difficult": {"likelihood": [0.10, 0.25, 0.65]}
+        }
+      }
+    }
+  }
+}

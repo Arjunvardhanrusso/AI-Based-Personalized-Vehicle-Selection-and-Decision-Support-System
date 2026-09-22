@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="100%" stop-color="#141B26" />
+    </linearGradient>
+    <linearGradient id="truckGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#222C3A" />
+      <stop offset="50%" stop-color="#38475C" />
+      <stop offset="100%" stop-color="#222C3A" />
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#090D14" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="240" fill="url(#bgGrad)" rx="12" stroke="#222D3D" stroke-width="1.5" />
+  
+  <ellipse cx="200" cy="184" rx="146" ry="11" fill="#05080D" opacity="0.85" />
+  <line x1="35" y1="184" x2="365" y2="184" stroke="#222D3D" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6" />
+
+  <!-- Roll Bar Behind Cabin -->
+  <path d="M 162,118 L 162,86 L 172,86 L 180,118" stroke="#64748B" stroke-width="3" fill="none" />
+
+  <!-- Pickup Truck Silhouette: Open Rear Cargo Bed + Dual Cab -->
+  <path d="M 52,150 
+           L 165,150 
+           L 165,88 
+           C 178,82 250,82 272,88 
+           L 315,124 
+           C 342,128 358,136 360,152
+           L 352,159 
+           C 345,162 320,162 310,147
+           C 300,133 270,133 260,147
+           L 158,147
+           C 148,133 118,133 108,147
+           L 58,155
+           Z" 
+        fill="url(#truckGrad)" stroke="#38BDF8" stroke-width="1.2" stroke-linejoin="round" />
+
+  <!-- Open Cargo Bed Wall & Tie-down Rail -->
+  <line x1="52" y1="126" x2="162" y2="126" stroke="#64748B" stroke-width="2" />
+  <line x1="52" y1="126" x2="52" y2="150" stroke="#64748B" stroke-width="2" />
+
+  <!-- Dual Cab Windows -->
+  <path d="M 174,92 L 264,92 L 302,124 L 174,124 Z" fill="#0F172A" stroke="#475569" stroke-width="1" opacity="0.9" />
+  <line x1="225" y1="92" x2="225" y2="124" stroke="#334155" stroke-width="2.5" />
+
+  <!-- Rugged All-Terrain Wheels with Deep Tread -->
+  <circle cx="285" cy="155" r="25" fill="url(#wheelGrad)" stroke="#475569" stroke-width="3.5" />
+  <circle cx="285" cy="155" r="16" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+  <circle cx="285" cy="155" r="6" fill="#F8FAFC" />
+  
+  <circle cx="132" cy="155" r="25" fill="url(#wheelGrad)" stroke="#475569" stroke-width="3.5" />
+  <circle cx="132" cy="155" r="16" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+  <circle cx="132" cy="155" r="6" fill="#F8FAFC" />
+
+  <!-- LED Accents -->
+  <path d="M 345,138 L 358,144 L 340,148 Z" fill="#38BDF8" />
+  <path d="M 54,136 L 50,142 L 56,143 Z" fill="#EF4444" />
+
+  <text x="200" y="212" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" letter-spacing="1.5" font-weight="600">
+    ALL-TERRAIN PICKUP TRUCK
+  </text>
+</svg>

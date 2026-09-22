@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --color-viq-background: var(--viq-background, #080808);
+  --color-viq-surface: var(--viq-surface, #0D0D0D);
+  --color-viq-surface-container-lowest: var(--viq-surface-container-lowest, #050505);
+  --color-viq-surface-container-low: var(--viq-surface-container-low, #101010);
+  --color-viq-surface-container: var(--viq-surface-container, #141414);
+  --color-viq-surface-container-high: var(--viq-surface-container-high, #1A1A1A);
+  --color-viq-surface-container-highest: var(--viq-surface-container-highest, #222222);
+  --color-viq-on-surface: var(--viq-on-surface, #F5F5F5);
+  --color-viq-on-surface-variant: var(--viq-on-surface-variant, #A3A3A3);
+  --color-viq-outline: var(--viq-outline, #4A4A4A);
+  --color-viq-outline-variant: var(--viq-outline-variant, #2E2E2E);
+  --color-viq-primary-container: var(--viq-primary-container, #33170B);
+  --color-viq-on-primary-container: var(--viq-on-primary-container, #FFD1B8);
+  --color-viq-secondary-container: var(--viq-secondary-container, #3C1F15);
+  --color-viq-tertiary-container: var(--viq-tertiary-container, #451A03);
+}
+
+:root {
+  /* Sleek Slate Dark (Default Theme) */
+  --viq-background: #080808;
+  --viq-surface: #0D0D0D;
+  --viq-surface-container-lowest: #050505;
+  --viq-surface-container-low: #101010;
+  --viq-surface-container: #141414;
+  --viq-surface-container-high: #1A1A1A;
+  --viq-surface-container-highest: #222222;
+  --viq-on-surface: #F5F5F5;
+  --viq-on-surface-variant: #A3A3A3;
+  --viq-outline: #4A4A4A;
+  --viq-outline-variant: #2E2E2E;
+  --viq-primary-container: #33170B;
+  --viq-on-primary-container: #FFD1B8;
+  --viq-secondary-container: #3C1F15;
+  --viq-tertiary-container: #451A03;
+  --viq-card-bg: #111111;
+  --viq-card-border: rgba(255, 255, 255, 0.08);
+  --viq-card-shadow: rgba(0, 0, 0, 0.7);
+}
+
+/* Sleek Slate Light Theme Palette */
+[data-theme="light"], .light-theme, html.light {
+  --viq-background: #F8FAFC;
+  --viq-surface: #FFFFFF;
+  --viq-surface-container-lowest: #FFFFFF;
+  --viq-surface-container-low: #F1F5F9;
+  --viq-surface-container: #E2E8F0;
+  --viq-surface-container-high: #CBD5E1;
+  --viq-surface-container-highest: #94A3B8;
+  --viq-on-surface: #0F172A;
+  --viq-on-surface-variant: #475569;
+  --viq-outline: #94A3B8;
+  --viq-outline-variant: #CBD5E1;
+  --viq-primary-container: #FFEDD5;
+  --viq-on-primary-container: #9A3412;
+  --viq-secondary-container: #FFEDD5;
+  --viq-tertiary-container: #FEF3C7;
+  --viq-card-bg: #FFFFFF;
+  --viq-card-border: rgba(148, 163, 184, 0.25);
+  --viq-card-shadow: rgba(15, 23, 42, 0.06);
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--viq-background);
+    color: var(--viq-on-surface);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--viq-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--viq-surface-container-high);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C86B3C; /* viq-primary */
+}
+
+/* Dynamic Card Aliases supporting Dark & Light themes */
+.surface-card {
+  background-color: var(--viq-card-bg);
+  border: 1px solid var(--viq-card-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px -10px var(--viq-card-shadow);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.surface-card:hover {
+  border-color: rgba(200, 107, 60, 0.35);
+  transform: translateY(-1px);
+}
+
+.surface-elevated {
+  background-color: var(--viq-surface-container-high);
+  border: 1px solid var(--viq-card-border);
+  border-radius: 12px;
+}
+
+.glass-panel {
+  background-color: var(--viq-surface-container);
+  border: 1px solid var(--viq-card-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px -10px var(--viq-card-shadow);
+}
+
+.glass-card {
+  background-color: var(--viq-surface-container-low);
+  border: 1px solid var(--viq-card-border);
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(200, 107, 60, 0.35);
+  background-color: var(--viq-surface-container-high);
+}

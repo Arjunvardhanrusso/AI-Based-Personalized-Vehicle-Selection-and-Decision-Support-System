@@ -1,0 +1,17 @@
+[
+  {
+    "vehicle_id": "MS001",
+    "vehicle_name": "Alto K10",
+    "brand": "Maruti Suzuki",
+    "fuel_type": "petrol",
+    "image_filename": "maruti_suzuki_alto_k10.jpg",
+    "image_path": "/cars/maruti_suzuki_alto_k10.jpg",
+    "queries": [
+      "Maruti Suzuki Alto K10 India official",
+      "Maruti Suzuki Alto K10 petrol India",
+      "Maruti Suzuki Alto K10 India car",
+      "Maruti Suzuki Alto K10 official India"
+    ],
+    "status": "PENDING"
+  }
+]

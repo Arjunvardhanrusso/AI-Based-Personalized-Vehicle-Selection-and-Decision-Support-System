@@ -1,0 +1,766 @@
+{
+  "_metadata": {
+    "description": "Questionnaire structure with beginner-friendly questions, options, and internal mappings to technical facts.",
+    "version": "1.1"
+  },
+  "steps": [
+    {
+      "id": "about_you",
+      "title": "About You",
+      "description": "Let's start with a few questions about your driving background.",
+      "questions": [
+        {
+          "id": "first_time_owner",
+          "text": "Is this your first time buying a vehicle?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Yes, first time",
+              "value": true
+            },
+            {
+              "label": "No, I've owned a vehicle before",
+              "value": false
+            }
+          ],
+          "maps_to": "first_time_owner"
+        },
+        {
+          "id": "experience",
+          "text": "How would you describe your driving experience?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "I'm learning or just got my license",
+              "value": "beginner"
+            },
+            {
+              "label": "I've been driving for a few years",
+              "value": "intermediate"
+            },
+            {
+              "label": "I'm very comfortable driving in all conditions",
+              "value": "experienced"
+            }
+          ],
+          "maps_to": "experience"
+        },
+        {
+          "id": "confidence",
+          "text": "How confident are you driving in heavy traffic or tight spaces?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not very confident",
+              "value": "low"
+            },
+            {
+              "label": "Somewhat confident",
+              "value": "medium"
+            },
+            {
+              "label": "Very confident",
+              "value": "high"
+            }
+          ],
+          "maps_to": "driving_confidence"
+        }
+      ]
+    },
+    {
+      "id": "driving_habits",
+      "title": "Your Driving",
+      "description": "Tell us about how and where you typically drive.",
+      "questions": [
+        {
+          "id": "daily_distance",
+          "text": "How far do you typically drive in a day?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "< 15 km / day (Short city commute)",
+              "value": 10
+            },
+            {
+              "label": "15 – 35 km / day (Standard daily driving)",
+              "value": 25
+            },
+            {
+              "label": "35 – 70 km / day (High daily usage)",
+              "value": 50
+            },
+            {
+              "label": "70 – 120 km / day (Very long daily commute)",
+              "value": 95
+            },
+            {
+              "label": "> 120 km / day (Intercity / Extreme usage)",
+              "value": 135
+            }
+          ],
+          "maps_to": "daily_distance"
+        },
+        {
+          "id": "driving_frequency",
+          "text": "How often do you drive in a week?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Almost every day (5-7 days)",
+              "value": "daily"
+            },
+            {
+              "label": "A few times a week (3-4 days)",
+              "value": "frequent"
+            },
+            {
+              "label": "Once or twice a week",
+              "value": "occasional"
+            },
+            {
+              "label": "Rarely (weekends or less)",
+              "value": "rare"
+            }
+          ],
+          "maps_to": "driving_frequency"
+        },
+        {
+          "id": "driving_environment",
+          "text": "Where do you mostly drive?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Within the city – short trips, traffic, stop-and-go",
+              "value": "city"
+            },
+            {
+              "label": "On highways – longer stretches, higher speeds",
+              "value": "highway"
+            },
+            {
+              "label": "A mix of both city and highway",
+              "value": "mixed"
+            }
+          ],
+          "maps_to": "driving_environment"
+        },
+        {
+          "id": "long_distance_frequency",
+          "text": "How often do you take long trips (more than 200 km one way)?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Frequently (every month or more)",
+              "value": "frequent"
+            },
+            {
+              "label": "Occasionally (a few times a year)",
+              "value": "occasional"
+            },
+            {
+              "label": "Rarely or never",
+              "value": "rare"
+            }
+          ],
+          "maps_to": "long_distance_frequency"
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "title": "Budget",
+      "description": "Help us understand your budget range. Don't worry about exact numbers – rough estimates work fine.",
+      "questions": [
+        {
+          "id": "regional_location",
+          "text": "Which region/state will you primarily drive in? (Determines local fuel & EV rates)",
+          "type": "single_choice",
+          "required": false,
+          "default": "delhi_ncr",
+          "options": [
+            {
+              "label": "Delhi NCR (Petrol: ₹94.7/L, Diesel: ₹87.6/L, CNG: ₹75.0/kg, EV: ₹6.5/kWh)",
+              "value": "delhi_ncr"
+            },
+            {
+              "label": "Maharashtra / Mumbai (Petrol: ₹104.2/L, Diesel: ₹92.1/L, CNG: ₹76.0/kg, EV: ₹8.0/kWh)",
+              "value": "maharashtra"
+            },
+            {
+              "label": "Karnataka / Bengaluru (Petrol: ₹102.8/L, Diesel: ₹88.9/L, CNG: ₹82.0/kg, EV: ₹7.5/kWh)",
+              "value": "karnataka"
+            },
+            {
+              "label": "Tamil Nadu / Chennai (Petrol: ₹100.7/L, Diesel: ₹92.3/L, CNG: ₹84.0/kg, EV: ₹7.0/kWh)",
+              "value": "tamil_nadu"
+            },
+            {
+              "label": "West Bengal / Kolkata (Petrol: ₹103.9/L, Diesel: ₹90.7/L, CNG: ₹85.0/kg, EV: ₹7.2/kWh)",
+              "value": "west_bengal"
+            }
+          ],
+          "maps_to": "regional_location"
+        },
+        {
+          "id": "purchase_budget",
+          "text": "What is your approximate budget for purchasing the vehicle?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Under ₹1 lakh (Ultra-Budget / Used)",
+              "value": 75000
+            },
+            {
+              "label": "₹1 – ₹3 lakh (Budget Used)",
+              "value": 200000
+            },
+            {
+              "label": "₹3 – ₹5 lakh (Budget)",
+              "value": 400000
+            },
+            {
+              "label": "₹5 – ₹8 lakh (Mid-Budget)",
+              "value": 650000
+            },
+            {
+              "label": "₹8 – ₹15 lakh (Mid-Range)",
+              "value": 1150000
+            },
+            {
+              "label": "₹15 – ₹30 lakh (Premium)",
+              "value": 2250000
+            },
+            {
+              "label": "₹30 lakh – ₹70 lakh (Luxury)",
+              "value": 5000000
+            },
+            {
+              "label": "₹70 lakh – ₹2 crore (High Luxury)",
+              "value": 12500000
+            },
+            {
+              "label": "₹2 crore – ₹10 crore+ (Exotic / Supercar)",
+              "value": 60000000
+            }
+          ],
+          "maps_to": "purchase_budget"
+        },
+        {
+          "id": "running_cost_preference",
+          "text": "How important is low daily running cost (fuel/electricity charges) to you?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Very important – I want the lowest possible cost",
+              "value": "very_high"
+            },
+            {
+              "label": "Important – I'd prefer lower costs",
+              "value": "high"
+            },
+            {
+              "label": "Somewhat important",
+              "value": "medium"
+            },
+            {
+              "label": "Not a major concern",
+              "value": "low"
+            }
+          ],
+          "maps_to": "running_cost_importance"
+        },
+        {
+          "id": "maintenance_preference",
+          "text": "How important is low maintenance cost to you?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Very important – minimal workshop visits",
+              "value": "very_high"
+            },
+            {
+              "label": "Important",
+              "value": "high"
+            },
+            {
+              "label": "Somewhat important",
+              "value": "medium"
+            },
+            {
+              "label": "Not a major concern",
+              "value": "low"
+            }
+          ],
+          "maps_to": "maintenance_importance"
+        },
+        {
+          "id": "vehicle_condition_preference",
+          "text": "Are you considering a pre-owned / used car or looking for a brand-new vehicle?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Brand new vehicle only",
+              "value": "new_only"
+            },
+            {
+              "label": "Prefer new, but open to pre-owned",
+              "value": "prefer_new"
+            },
+            {
+              "label": "No preference – best value for money",
+              "value": "no_preference"
+            },
+            {
+              "label": "Prefer pre-owned / used car (max value for budget)",
+              "value": "prefer_used"
+            }
+          ],
+          "maps_to": "vehicle_condition_preference"
+        }
+      ]
+    },
+    {
+      "id": "vehicle_preference",
+      "title": "Vehicle Preferences",
+      "description": "Tell us what you'd like in your vehicle. It's okay if you're not sure – just pick what feels right.",
+      "questions": [
+        {
+          "id": "transmission_preference",
+          "text": "Do you have a preference for gear type?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Manual (I shift gears myself)",
+              "value": "manual"
+            },
+            {
+              "label": "Automatic (the car shifts gears for me)",
+              "value": "automatic"
+            },
+            {
+              "label": "I'm not sure / No preference",
+              "value": "unknown"
+            }
+          ],
+          "maps_to": "transmission_preference"
+        },
+        {
+          "id": "performance_importance",
+          "text": "How important is engine performance and speed to you?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Very important – I enjoy spirited driving",
+              "value": "very_high"
+            },
+            {
+              "label": "Somewhat important",
+              "value": "medium"
+            },
+            {
+              "label": "Not important – comfortable driving is enough",
+              "value": "low"
+            }
+          ],
+          "maps_to": "performance_importance"
+        },
+        {
+          "id": "seating_requirement",
+          "text": "How many people usually travel in your vehicle?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "1–2 people",
+              "value": 2
+            },
+            {
+              "label": "3–5 people (typical family)",
+              "value": 5
+            },
+            {
+              "label": "6–7 people (large family)",
+              "value": 7
+            },
+            {
+              "label": "More than 7",
+              "value": 8
+            }
+          ],
+          "maps_to": "seating_requirement"
+        },
+        {
+          "id": "boot_space_need",
+          "text": "How much luggage space do you need?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Small – just daily essentials",
+              "value": "small"
+            },
+            {
+              "label": "Medium – groceries, bags, occasional luggage",
+              "value": "medium"
+            },
+            {
+              "label": "Large – regular heavy luggage or equipment",
+              "value": "large"
+            }
+          ],
+          "maps_to": "boot_space_need"
+        },
+        {
+          "id": "ground_clearance_need",
+          "text": "What kind of roads do you usually drive on?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Smooth city roads",
+              "value": "low"
+            },
+            {
+              "label": "Mix of good and rough roads",
+              "value": "medium"
+            },
+            {
+              "label": "Often rough, unpaved, or flooded roads",
+              "value": "high"
+            }
+          ],
+          "maps_to": "ground_clearance_need"
+        },
+        {
+          "id": "preferred_brands",
+          "text": "Do you have any preferred brand(s)? (Optional)",
+          "type": "multi_choice",
+          "required": false,
+          "default": [],
+          "options": [],
+          "maps_to": "preferred_brands"
+        }
+      ]
+    },
+    {
+      "id": "parking_infrastructure",
+      "title": "Parking & Charging",
+      "description": "These questions help us understand if an electric vehicle would be practical for you.",
+      "questions": [
+        {
+          "id": "parking",
+          "text": "Where do you usually park your vehicle at home?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "In my own house / garage / driveway",
+              "value": "private_house"
+            },
+            {
+              "label": "Apartment with a dedicated parking spot",
+              "value": "apartment_with_dedicated"
+            },
+            {
+              "label": "Apartment without a dedicated parking spot",
+              "value": "apartment_without_dedicated"
+            },
+            {
+              "label": "On the street or open parking",
+              "value": "street_parking"
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown"
+            }
+          ],
+          "maps_to": "parking"
+        },
+        {
+          "id": "charging_knowledge",
+          "text": "If you were to get an electric vehicle, where would you normally charge it?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "I can charge at home (have or can install a charger)",
+              "value": "available"
+            },
+            {
+              "label": "I can charge at work",
+              "value": "at_work"
+            },
+            {
+              "label": "I'd use public charging stations",
+              "value": "public_only"
+            },
+            {
+              "label": "I don't think I have access to charging",
+              "value": "unavailable"
+            },
+            {
+              "label": "I'm not sure / I don't know",
+              "value": "unknown"
+            }
+          ],
+          "maps_to": "charging_knowledge"
+        },
+        {
+          "id": "fuel_station_access",
+          "text": "How easy is it to find a fuel station (petrol/diesel/CNG) near you?",
+          "type": "single_choice",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Very easy – multiple stations nearby",
+              "value": "easy"
+            },
+            {
+              "label": "Reasonably accessible",
+              "value": "moderate"
+            },
+            {
+              "label": "Somewhat difficult",
+              "value": "difficult"
+            }
+          ],
+          "maps_to": "fuel_station_access"
+        }
+      ]
+    },
+    {
+      "id": "priorities",
+      "title": "Your Priorities",
+      "description": "Choose how important each factor is to you. Nothing is selected automatically.",
+      "questions": [
+        {
+          "id": "priority_running_cost",
+          "text": "Low Daily Running Cost (Fuel / EV Charging)",
+          "type": "single_choice",
+          "ui_type": "choice_buttons",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not Important",
+              "value": 0.2
+            },
+            {
+              "label": "Moderate Importance",
+              "value": 0.5
+            },
+            {
+              "label": "High Importance",
+              "value": 0.8
+            },
+            {
+              "label": "Top Priority",
+              "value": 1.0
+            }
+          ],
+          "maps_to": "priority_running_cost"
+        },
+        {
+          "id": "priority_maintenance",
+          "text": "Low Maintenance & Service Cost",
+          "type": "single_choice",
+          "ui_type": "choice_buttons",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not Important",
+              "value": 0.2
+            },
+            {
+              "label": "Moderate Importance",
+              "value": 0.5
+            },
+            {
+              "label": "High Importance",
+              "value": 0.8
+            },
+            {
+              "label": "Top Priority",
+              "value": 1.0
+            }
+          ],
+          "maps_to": "priority_maintenance"
+        },
+        {
+          "id": "priority_performance",
+          "text": "Engine Performance, Acceleration & Speed",
+          "type": "single_choice",
+          "ui_type": "choice_buttons",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not Important",
+              "value": 0.2
+            },
+            {
+              "label": "Moderate Importance",
+              "value": 0.5
+            },
+            {
+              "label": "High Importance",
+              "value": 0.8
+            },
+            {
+              "label": "Top Priority",
+              "value": 1.0
+            }
+          ],
+          "maps_to": "priority_performance"
+        },
+        {
+          "id": "priority_environment",
+          "text": "Eco-Friendliness & Zero/Low Emissions",
+          "type": "single_choice",
+          "ui_type": "choice_buttons",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not Important",
+              "value": 0.2
+            },
+            {
+              "label": "Moderate Importance",
+              "value": 0.5
+            },
+            {
+              "label": "High Importance",
+              "value": 0.8
+            },
+            {
+              "label": "Top Priority",
+              "value": 1.0
+            }
+          ],
+          "maps_to": "priority_environment"
+        },
+        {
+          "id": "priority_purchase_price",
+          "text": "Low Purchase Price / Max Value for Money",
+          "type": "single_choice",
+          "ui_type": "choice_buttons",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not Important",
+              "value": 0.2
+            },
+            {
+              "label": "Moderate Importance",
+              "value": 0.5
+            },
+            {
+              "label": "High Importance",
+              "value": 0.8
+            },
+            {
+              "label": "Top Priority",
+              "value": 1.0
+            }
+          ],
+          "maps_to": "priority_purchase_price"
+        },
+        {
+          "id": "priority_long_distance",
+          "text": "Long-Distance & Highway Cruising Capability",
+          "type": "single_choice",
+          "ui_type": "choice_buttons",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not Important",
+              "value": 0.2
+            },
+            {
+              "label": "Moderate Importance",
+              "value": 0.5
+            },
+            {
+              "label": "High Importance",
+              "value": 0.8
+            },
+            {
+              "label": "Top Priority",
+              "value": 1.0
+            }
+          ],
+          "maps_to": "priority_long_distance"
+        },
+        {
+          "id": "priority_comfort",
+          "text": "Cabin Comfort, Smooth Ride & Ease of Driving",
+          "type": "single_choice",
+          "ui_type": "choice_buttons",
+          "required": true,
+          "default": null,
+          "options": [
+            {
+              "label": "Not Important",
+              "value": 0.2
+            },
+            {
+              "label": "Moderate Importance",
+              "value": 0.5
+            },
+            {
+              "label": "High Importance",
+              "value": 0.8
+            },
+            {
+              "label": "Top Priority",
+              "value": 1.0
+            }
+          ],
+          "maps_to": "priority_comfort"
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "title": "Review",
+      "description": "Review your interpreted profile before the AI analyzes your requirements.",
+      "questions": []
+    }
+  ]
+}

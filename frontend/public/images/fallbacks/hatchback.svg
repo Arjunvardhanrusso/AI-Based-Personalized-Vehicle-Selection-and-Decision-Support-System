@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="100%" stop-color="#141B26" />
+    </linearGradient>
+    <linearGradient id="hatchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#232D3B" />
+      <stop offset="50%" stop-color="#3A495E" />
+      <stop offset="100%" stop-color="#232D3B" />
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#090D14" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="240" fill="url(#bgGrad)" rx="12" stroke="#222D3D" stroke-width="1.5" />
+  
+  <ellipse cx="200" cy="180" rx="135" ry="9" fill="#05080D" opacity="0.85" />
+  <line x1="45" y1="180" x2="355" y2="180" stroke="#222D3D" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6" />
+
+  <!-- Compact 2-Box Hatchback Silhouette -->
+  <!-- Short rear overhang, steep rear hatch, aerodynamic nose -->
+  <path d="M 85,152 
+           C 85,138 92,115 105,96 
+           C 112,86 160,86 240,88 
+           L 292,126 
+           C 318,131 340,140 345,154
+           L 338,160 
+           C 332,163 310,163 300,150
+           C 290,138 266,138 256,150
+           L 156,150
+           C 146,138 122,138 112,150
+           L 85,155
+           Z" 
+        fill="url(#hatchGrad)" stroke="#38BDF8" stroke-width="1.2" stroke-linejoin="round" />
+
+  <!-- Hatchback Greenhouse (Taller headroom, steep tailgate) -->
+  <path d="M 112,98 L 235,98 L 278,126 L 122,126 Z" fill="#0F172A" stroke="#475569" stroke-width="1" opacity="0.9" />
+  <line x1="185" y1="98" x2="185" y2="126" stroke="#334155" stroke-width="2" />
+
+  <!-- Rear Roof Spoiler -->
+  <path d="M 100,94 L 115,94 L 110,98 Z" fill="#64748B" />
+
+  <!-- Wheels -->
+  <circle cx="278" cy="154" r="20" fill="url(#wheelGrad)" stroke="#475569" stroke-width="3" />
+  <circle cx="278" cy="154" r="13" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+  <circle cx="278" cy="154" r="5" fill="#E2E8F0" />
+  
+  <circle cx="134" cy="154" r="20" fill="url(#wheelGrad)" stroke="#475569" stroke-width="3" />
+  <circle cx="134" cy="154" r="13" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+  <circle cx="134" cy="154" r="5" fill="#E2E8F0" />
+
+  <!-- LED Accents -->
+  <path d="M 328,142 L 342,148 L 326,151 Z" fill="#38BDF8" />
+  <path d="M 88,145 L 82,148 L 90,150 Z" fill="#EF4444" />
+
+  <text x="200" y="210" text-anchor="middle" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" letter-spacing="1.5" font-weight="600">
+    COMPACT HATCHBACK
+  </text>
+</svg>

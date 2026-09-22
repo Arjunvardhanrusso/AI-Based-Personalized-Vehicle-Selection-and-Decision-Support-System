@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#363940","primary-fixed":"#6ff6ff","secondary-fixed":"#efdbff","on-primary-container":"#006a70","outline":"#849495","on-tertiary-fixed":"#002113","inverse-primary":"#00696f","error-container":"#93000a","surface-tint":"#00dce6","surface-container":"#1d2026","on-background":"#e1e2eb","tertiary-container":"#67f4b7","tertiary-fixed":"#6ffbbe","on-primary-fixed-variant":"#004f53","surface-container-highest":"#32353c","on-error":"#690005","inverse-on-surface":"#2e3037","error":"#ffb4ab","on-secondary":"#480081","on-error-container":"#ffdad6","surface-variant":"#32353c","on-secondary-fixed-variant":"#6700b5","primary":"#e0fdff","on-surface-variant":"#b9cacb","on-primary":"#00373a","background":"#10131a","surface":"#10131a","surface-container-high":"#272a31","tertiary":"#e1ffec","outline-variant":"#3a494b","tertiary-fixed-dim":"#4edea3","secondary-fixed-dim":"#dcb8ff","on-tertiary-container":"#006e4b","on-surface":"#e1e2eb","on-tertiary-fixed-variant":"#005236","surface-container-low":"#191c22","secondary-container":"#7701d0","on-secondary-fixed":"#2c0051","inverse-surface":"#e1e2eb","on-tertiary":"#003824","primary-fixed-dim":"#00dce6","on-secondary-container":"#dcb7ff","on-primary-fixed":"#002022","surface-dim":"#10131a","surface-container-lowest":"#0b0e14","primary-container":"#00f2fe","secondary":"#dcb8ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-md":"1rem","margin-mobile":"1rem","gutter-sm":"0.75rem","gutter":"1.5rem","margin":"2.5rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"data-mono-lg":["JetBrains Mono"],"data-mono-md":["JetBrains Mono"],"body-lg":["Plus Jakarta Sans"],"data-mono-sm":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-caps":["JetBrains Mono"]},fontSize:{"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"data-mono-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"500"}],"data-mono-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"data-mono-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"500"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["10px",{"lineHeight":"12px","letterSpacing":"0.08em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="VehicleIQ Minimalist Automotive AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XgIZFuux3YHc1zZsCskn0XBTO9BXPkGUysw1PyxCBrxwGLkKsbd9gay3lnhLGDetj3ht0CiFhPMVNmHFHWHGJqKZ6KOyb0tjrSZ7MJlH8AlO4z3B5-veVSbt9uoSwpZimC4lPu3hGLV6-UNK0f5PjBfRwTuhj6fm3pEKbneKbdJxllQxHi2tEPHscQiwbgLxnGDbQWrV_jtgIkBm4FWZhvqGPKORQ8w1s8TVE_kBa9L86DAaz2F-hKcik"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary uppercase">VehicleIQ</span><span class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Decision Telemetry v4.2</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-surface-container-high text-primary font-semibold rounded-lg" data-path="discover" href="#">Discover</a><a class="px-space-md py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="vehicles" href="#">Vehicles</a><a class="px-space-md py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="compare" href="#">Compare</a><a class="px-space-md py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="ai-reasoning" href="#">AI Reasoning</a><a class="px-space-md py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="knowledge-base" href="#">Knowledge Base</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-space-xs rounded gap-space-sm cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-outline text-[18px]">search</span><span class="font-body-sm text-body-sm text-outline">Search parameters</span><kbd class="bg-surface-container-highest text-on-surface-variant px-space-xs py-0.5 rounded font-data-mono-sm text-data-mono-sm">Ctrl+K</kbd></div><div class="hidden lg:flex items-center bg-surface-container-low px-space-md py-space-xs rounded gap-space-xs cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">location_on</span><span class="font-data-mono-sm text-data-mono-sm text-on-surface">Bengaluru (BLR)</span><span class="material-symbols-outlined text-outline text-[16px]">arrow_drop_down</span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase tracking-wider">AI ENGINE ONLINE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface-container-lowest"><div class="flex flex-col w-full">
+<!-- Interactive Diagnostics Data Store & State Container -->
+<div class="w-full px-margin py-space-md bg-surface border-none flex flex-col gap-space-lg">
+<!-- 1. Top Sub-Header / Lab Control Bar -->
+<section class="w-full flex flex-col gap-space-md">
+<!-- Breadcrumb & Architecture Telemetry Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-widest">VEHICLEIQ LABS</span>
+<span class="text-outline-variant font-data-mono-sm text-data-mono-sm">/</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">INFERENCE PIPELINE TRACE</span>
+<span class="text-outline-variant font-data-mono-sm text-data-mono-sm">/</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">ACADEMIC FAI HUD v4.2</span>
+</div>
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim uppercase">FastAPI Async 3.11</span>
+</div>
+<span class="text-outline-variant font-data-mono-sm text-data-mono-sm">|</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">timer</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface">CYCLE: <strong class="text-primary font-bold">14.2ms</strong></span>
+</div>
+<span class="text-outline-variant font-data-mono-sm text-data-mono-sm">|</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase">PARADIGMS: 4 ACTIVE (KR, FC, FUZZY, BAYES)</span>
+</div>
+</div>
+</div>
+<!-- Main Operational Control Deck -->
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded shadow-md">
+<!-- Target Evaluation Target Selector -->
+<div class="flex flex-col gap-space-xs w-full lg:w-auto">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Active Evaluation Target</span>
+<span class="bg-primary/10 text-primary px-space-xs py-0.5 rounded font-data-mono-sm text-data-mono-sm">REF: IN-2025-AX7L</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[280px] sm:min-w-[360px]">
+<div class="flex items-center justify-between bg-surface-container-highest px-space-md py-space-sm rounded cursor-pointer hover:bg-surface-bright transition-colors shadow-inner">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Mahindra XUV700 AX7L AWD</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary">MAH-XUV700-AX7L // 2.0L mStallion Turbo AT</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+</div>
+</div>
+<!-- Alternative Quick Switch Pills -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-caps text-label-caps text-outline uppercase mr-1">Pivots:</span>
+<button class="bg-surface-container px-space-sm py-1.5 rounded font-data-mono-sm text-data-mono-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shadow-sm">
+                Tata Nexon EV Max
+              </button>
+<button class="bg-surface-container px-space-sm py-1.5 rounded font-data-mono-sm text-data-mono-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shadow-sm">
+                BMW X5 xDrive40i
+              </button>
+<button class="bg-surface-container px-space-sm py-1.5 rounded font-data-mono-sm text-data-mono-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors shadow-sm">
+                Hyundai Ioniq 5
+              </button>
+</div>
+</div>
+</div>
+<!-- Master Global Triggers -->
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-sm rounded font-data-mono-sm text-data-mono-sm text-on-surface hover:bg-surface-bright transition-all shadow-sm" id="exportTraceBtn">
+<span class="material-symbols-outlined text-secondary text-[16px]">code</span>
+<span>Export LaTeX / JSON Trace</span>
+</button>
+<button class="flex items-center gap-space-xs bg-primary-container text-on-primary-container font-semibold px-space-lg py-space-sm rounded font-body-md text-body-md hover:bg-primary-fixed shadow-[0_0_20px_rgba(0,242,254,0.3)] transition-all" id="reInferenceBtn">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+<span>Re-Inference Simulation</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 2. Master Multi-Paradigm Grid: Three Columns of Rigorous AI Inference -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter w-full">
+<!-- ========================================================================= -->
+<!-- COLUMN A: Paradigm 01 & 02 — Knowledge Representation & Forward Chaining -->
+<!-- ========================================================================= -->
+<div class="flex flex-col gap-space-md">
+<!-- Section Header with Geometric Accent -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-xs rounded">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">Paradigm 01 &amp; 02</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">KR + Forward Chaining</span>
+</div>
+<!-- Working Memory / Fact Ingestion Base -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">database</span>
+              Working Memory: Fact Ingestion Base
+            </span>
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim">5 Ingested Facts</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Asserted initial context parsed from user requirements tensor and geo-telemetric constraints:
+          </p>
+<div class="grid grid-cols-1 gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-space-xs rounded">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Fact_01: Budget Ceiling</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-medium">&lt;= ₹30,00,000 (INR)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-space-xs rounded">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Fact_02: Seating Capacity</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-medium">&gt;= 7 Occupants</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-space-xs rounded">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Fact_03: Topography &amp; Clearance</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-medium">&gt;= 200mm (Monsoon Clearance)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-space-xs rounded">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Fact_04: Geolocation Grid</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-medium">Karnataka (BLR KA-01)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-space-xs rounded">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Fact_05: Primary Mission Profile</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-medium">Urban Intercity + Highway NH44</span>
+</div>
+</div>
+</div>
+<!-- Forward Chaining Step-by-Step Rule Activation Tree -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_tree</span>
+              Inference Trace: Production Rules
+            </span>
+<span class="font-data-mono-sm text-data-mono-sm text-outline">Resolution: Spec+Rec</span>
+</div>
+<!-- Step Nodes Flow -->
+<div class="flex flex-col gap-space-sm">
+<!-- Node 01 -->
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-1 shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-md text-data-mono-md font-bold text-tertiary-fixed-dim">NODE FC-01</span>
+<span class="bg-tertiary-container/20 text-tertiary-fixed-dim px-2 py-0.5 rounded font-label-caps text-label-caps uppercase">STATUS: FIRED (100% MATCH)</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface">
+                IF <span class="text-primary">(budget &lt;= 30.00L)</span> &amp; <span class="text-primary">(seating &gt;= 6)</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">
+                THEN <span class="text-tertiary-fixed font-semibold">ADD_FACT(Family_Carrier_Eligible)</span>
+</div>
+<div class="flex items-center justify-between text-outline font-data-mono-sm text-data-mono-sm mt-1 pt-1 bg-surface-container-lowest/50 px-2 py-1 rounded">
+<span>Suitability Delta:</span>
+<span class="text-tertiary-fixed-dim font-bold">+15.0% Suitability Weight</span>
+</div>
+</div>
+<!-- Node 02 -->
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-1 shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-md text-data-mono-md font-bold text-tertiary-fixed-dim">NODE FC-02</span>
+<span class="bg-tertiary-container/20 text-tertiary-fixed-dim px-2 py-0.5 rounded font-label-caps text-label-caps uppercase">STATUS: FIRED (100% MATCH)</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface">
+                IF <span class="text-primary">(clearance &gt;= 200mm)</span> &amp; <span class="text-primary">(region == 'BLR_MONSOON')</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">
+                THEN <span class="text-tertiary-fixed font-semibold">ADD_FACT(Terrain_Immunity_High)</span>
+</div>
+<div class="flex items-center justify-between text-outline font-data-mono-sm text-data-mono-sm mt-1 pt-1 bg-surface-container-lowest/50 px-2 py-1 rounded">
+<span>Suitability Delta:</span>
+<span class="text-tertiary-fixed-dim font-bold">+12.5% Terrain Boost</span>
+</div>
+</div>
+<!-- Node 03 -->
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-1 shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-md text-data-mono-md font-bold text-secondary">NODE FC-03</span>
+<span class="bg-secondary/10 text-secondary px-2 py-0.5 rounded font-label-caps text-label-caps uppercase">STATUS: FIRED (92% MATCH)</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface">
+                IF <span class="text-primary">(powertrain == Turbo-Petrol)</span> &amp; <span class="text-primary">(gearbox == TC_AT)</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">
+                THEN <span class="text-secondary font-semibold">ADD_FACT(Overtake_Punch_Optimal)</span>
+</div>
+<div class="flex items-center justify-between text-outline font-data-mono-sm text-data-mono-sm mt-1 pt-1 bg-surface-container-lowest/50 px-2 py-1 rounded">
+<span>Suitability Delta:</span>
+<span class="text-secondary font-bold">+9.0% Dynamic Factor</span>
+</div>
+</div>
+<!-- Node 04 (Pruned / Inhibited) -->
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-1 opacity-75 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-md text-data-mono-md font-bold text-outline">NODE FC-04</span>
+<span class="bg-error-container/40 text-error px-2 py-0.5 rounded font-label-caps text-label-caps uppercase">STATUS: PRUNED / INHIBITED</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface-variant line-through">
+                IF (is_pure_ev == TRUE) &amp; (highway_range &lt; 400km)
+              </div>
+<div class="font-data-mono-sm text-data-mono-sm text-outline">
+                THEN PENALIZE_RANGE_ANXIETY [-18%]
+              </div>
+<div class="flex items-center justify-between text-error font-data-mono-sm text-data-mono-sm mt-1 pt-1 bg-surface-container-lowest/50 px-2 py-1 rounded">
+<span>Inhibition Diagnostic:</span>
+<span>Branch pruned: Vehicle is ICE AWD</span>
+</div>
+</div>
+</div>
+<!-- Rule Inspector Terminal Drawer -->
+<div class="bg-surface-container-lowest p-space-sm rounded font-data-mono-sm text-data-mono-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline pb-1">
+<span class="text-primary font-bold"># RULE ENGINE INSPECTOR (DROOLS/CLIPS EMULATOR)</span>
+<span>TIME: 14:02:18.420</span>
+</div>
+<pre class="text-on-surface-variant overflow-x-auto text-[11px] leading-relaxed"><code class="text-secondary">rule</code> "Evaluate_Monsoon_Traction"
+  <code class="text-secondary">when</code>
+    $v: Vehicle( ground_clearance &gt;= 200, drive_type == "AWD" )
+    $e: GeoEnvironment( flood_risk_level in ("MODERATE", "HIGH") )
+  <code class="text-secondary">then</code>
+    modify($v) { addScoreBonus(12.5, "AWD Monsoon Immunity") };
+<code class="text-secondary">end</code></pre>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- COLUMN B: Paradigm 03 — Continuous Fuzzy Logic Preference Modeling -->
+<!-- ========================================================================= -->
+<div class="flex flex-col gap-space-md">
+<!-- Section Header -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-xs rounded">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary">Paradigm 03</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Continuous Fuzzy Sets</span>
+</div>
+<!-- Explanatory Context Header Card -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs shadow-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+            Linguistic Variable Translation
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Translates non-binary qualitative human constraints (<em class="text-primary">“Spirited yet Plush Family Cruiser”</em>) into continuous membership functions <code class="text-secondary font-data-mono-sm">μ(x) ∈ [0, 1]</code>.
+          </p>
+</div>
+<!-- Interactive Membership Curves Panel -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Triangular &amp; Trapezoidal Sets</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary">Mamdani Inference Engine</span>
+</div>
+<!-- Curve 1: Comfort Set -->
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">1. Comfort Profile: μ_Comfort(x)</span>
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary-fixed font-bold">x = 0.84 (“Sublime Compliance”)</span>
+</div>
+<!-- SVG Membership Curve -->
+<div class="relative w-full h-20 bg-surface-container-lowest rounded p-1">
+<svg class="w-full h-full text-outline-variant" preserveaspectratio="none" viewbox="0 0 300 80">
+<!-- Low Comfort Trapezoid -->
+<path d="M 0 10 L 60 10 L 100 70 L 0 70 Z" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"></path>
+<!-- Medium Comfort Triangle -->
+<path d="M 70 70 L 150 10 L 230 70 Z" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"></path>
+<!-- High Comfort Trapezoid -->
+<path d="M 180 70 L 240 10 L 300 10 L 300 70 Z" fill="#67f4b7" fill-opacity="0.18" stroke="#67f4b7" stroke-width="1.5"></path>
+<!-- Evaluated Crisp Line for 0.84 -->
+<line stroke="#00f2fe" stroke-dasharray="3,3" stroke-width="2" x1="252" x2="252" y1="5" y2="75"></line>
+<circle cx="252" cy="18" fill="#00f2fe" r="4"></circle>
+</svg>
+<div class="absolute bottom-1 right-2 font-data-mono-sm text-[9px] text-primary">μ = 0.92 [High Comfort]</div>
+</div>
+</div>
+<!-- Curve 2: Sportiness Set -->
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">2. Dynamic Sportiness: μ_Sport(x)</span>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-bold">x = 0.76 (“200PS Boost Profile”)</span>
+</div>
+<div class="relative w-full h-20 bg-surface-container-lowest rounded p-1">
+<svg class="w-full h-full text-outline-variant" preserveaspectratio="none" viewbox="0 0 300 80">
+<path d="M 0 70 L 80 15 L 160 70 Z" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"></path>
+<path d="M 120 70 L 200 15 L 280 70 Z" fill="#dcb8ff" fill-opacity="0.2" stroke="#dcb8ff" stroke-width="1.5"></path>
+<path d="M 230 70 L 290 20 L 300 20 L 300 70 Z" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"></path>
+<!-- Evaluated Line for 0.76 -->
+<line stroke="#dcb8ff" stroke-dasharray="3,3" stroke-width="2" x1="228" x2="228" y1="5" y2="75"></line>
+<circle cx="228" cy="24" fill="#dcb8ff" r="4"></circle>
+</svg>
+<div class="absolute bottom-1 right-2 font-data-mono-sm text-[9px] text-secondary">μ = 0.78 [High Dynamic]</div>
+</div>
+</div>
+<!-- Curve 3: Urban Agility Set -->
+<div class="bg-surface-container p-space-sm rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-sm text-data-mono-sm font-semibold text-on-surface">3. Urban Agility: μ_Agility(x)</span>
+<span class="font-data-mono-sm text-data-mono-sm text-error font-bold">x = 0.58 (“Radius 5.75m Constraint”)</span>
+</div>
+<div class="relative w-full h-20 bg-surface-container-lowest rounded p-1">
+<svg class="w-full h-full text-outline-variant" preserveaspectratio="none" viewbox="0 0 300 80">
+<path d="M 0 10 L 80 10 L 140 70 L 0 70 Z" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"></path>
+<path d="M 100 70 L 170 15 L 240 70 Z" fill="#ffb4ab" fill-opacity="0.2" stroke="#ffb4ab" stroke-width="1.5"></path>
+<path d="M 210 70 L 270 10 L 300 10 L 300 70 Z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"></path>
+<!-- Evaluated Line for 0.58 -->
+<line stroke="#ffb4ab" stroke-dasharray="3,3" stroke-width="2" x1="174" x2="174" y1="5" y2="75"></line>
+<circle cx="174" cy="20" fill="#ffb4ab" r="4"></circle>
+</svg>
+<div class="absolute bottom-1 right-2 font-data-mono-sm text-[9px] text-error">μ = 0.54 [Moderate Agility]</div>
+</div>
+</div>
+<!-- Defuzzification Unit (Centroid / COA) -->
+<div class="bg-surface-container-highest p-space-md rounded flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">Defuzzification Unit (Center of Area)</span>
+<span class="bg-primary/20 text-primary px-2 py-0.5 rounded font-data-mono-sm text-data-mono-sm font-bold">y* = 0.814</span>
+</div>
+<p class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">
+              Mathematical Defuzzification Integral Equation:
+            </p>
+<div class="bg-surface-container-lowest p-space-xs rounded font-data-mono-sm text-data-mono-sm text-primary flex items-center justify-center">
+              y* = ∫ μ_A(y) · y dy  /  ∫ μ_A(y) dy  =  <strong class="text-tertiary-fixed ml-2 text-data-mono-md font-bold">0.814 / 1.000</strong>
+</div>
+<div class="flex items-center justify-between text-outline font-data-mono-sm text-data-mono-sm pt-1">
+<span>Overall Qualitative Concordance:</span>
+<span class="text-tertiary-fixed-dim font-semibold">Plush Heavyweight Cruiser (High Affinity)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- COLUMN C: Paradigm 04 — Bayesian Probabilistic Belief Network -->
+<!-- ========================================================================= -->
+<div class="flex flex-col gap-space-md">
+<!-- Section Header -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-xs rounded">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded bg-tertiary-fixed-dim"></span>
+<span class="font-headline-sm text-headline-sm font-semibold text-tertiary-fixed">Paradigm 04</span>
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Bayesian Belief Network</span>
+</div>
+<!-- Sequential Belief Update Waterfall -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary-fixed uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stacked_line_chart</span>
+              Sequential Prior-to-Posterior Trace
+            </span>
+<span class="font-data-mono-sm text-data-mono-sm text-outline">Evidence Flow</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Recursive Bayesian probability update <code class="text-tertiary-fixed-dim font-data-mono-sm">P(Suitability=Optimal | E)</code> across discrete real-world telemetry events:
+          </p>
+<!-- Waterfall Step List -->
+<div class="flex flex-col gap-space-xs">
+<!-- Step 0: Prior -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded">
+<div class="flex flex-col">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface font-semibold">Prior Baseline: P(V_0)</span>
+<span class="font-body-sm text-body-sm text-outline">Category volume &amp; GNCAP 5-star baseline</span>
+</div>
+<div class="text-right">
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-bold">0.380</span>
+<span class="block font-data-mono-sm text-data-mono-sm text-outline">Base</span>
+</div>
+</div>
+<!-- Step 1: Budget Evidence -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded">
+<div class="flex flex-col">
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim font-semibold">+ Evidence E1: Budget In-Range</span>
+<span class="font-body-sm text-body-sm text-outline">Actual ₹24.85L vs limit ₹30.00L</span>
+</div>
+<div class="text-right">
+<span class="font-data-mono-md text-data-mono-md text-tertiary-fixed font-bold">0.590</span>
+<span class="block font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim font-bold">Δ +0.210</span>
+</div>
+</div>
+<!-- Step 2: Seating Evidence -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded">
+<div class="flex flex-col">
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim font-semibold">+ Evidence E2: 7-Occupant Ingress</span>
+<span class="font-body-sm text-body-sm text-outline">True 3-row layout certified</span>
+</div>
+<div class="text-right">
+<span class="font-data-mono-md text-data-mono-md text-tertiary-fixed font-bold">0.745</span>
+<span class="block font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim font-bold">Δ +0.155</span>
+</div>
+</div>
+<!-- Step 3: Ground Clearance Monsoon -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded">
+<div class="flex flex-col">
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim font-semibold">+ Evidence E3: Monsoon Ground Clearance</span>
+<span class="font-body-sm text-body-sm text-outline">200mm unladen &gt; 180mm road requirement</span>
+</div>
+<div class="text-right">
+<span class="font-data-mono-md text-data-mono-md text-tertiary-fixed font-bold">0.862</span>
+<span class="block font-data-mono-sm text-data-mono-sm text-tertiary-fixed-dim font-bold">Δ +0.117</span>
+</div>
+</div>
+<!-- Step 4: Urban Fuel Penalty (Negative Evidence) -->
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-2 rounded">
+<div class="flex flex-col">
+<span class="font-data-mono-sm text-data-mono-sm text-error font-semibold">- Evidence E4: Bangalore Crawl Penalty</span>
+<span class="font-body-sm text-body-sm text-outline">Observed ORR stop-go telemetry: 8.2 km/l</span>
+</div>
+<div class="text-right">
+<span class="font-data-mono-md text-data-mono-md text-error font-bold">0.824</span>
+<span class="block font-data-mono-sm text-data-mono-sm text-error font-bold">Δ -0.038</span>
+</div>
+</div>
+</div>
+<!-- Posterior Summary Callout -->
+<div class="bg-surface-container-highest p-space-md rounded flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary-fixed uppercase font-bold tracking-wider">Final Bayesian Posterior</span>
+<span class="bg-tertiary-container text-on-tertiary-container px-space-sm py-0.5 rounded font-data-mono-lg text-data-mono-lg font-bold">82.4%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded overflow-hidden mt-1">
+<div class="bg-tertiary-fixed-dim h-full" style="width: 82.4%"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-data-mono-sm text-data-mono-sm pt-1">
+<span>Confidence Threshold: α = 0.05</span>
+<span class="text-tertiary-fixed-dim font-bold">High Confidence Rejection of Null</span>
+</div>
+</div>
+<!-- Bayes Live Calculation Matrix -->
+<div class="bg-surface-container-lowest p-space-sm rounded font-data-mono-sm text-data-mono-sm flex flex-col gap-1">
+<span class="text-primary font-bold">BAYES THEOREM EQUATION SOLVER:</span>
+<div class="text-on-surface-variant overflow-x-auto text-[11px] leading-relaxed">
+              P(H|E) = [P(E|H) × P(H)] / ∑ P(E|H_i)P(H_i)<br/>
+              P(Optimal|E_1..4) = [ 0.912 × 0.380 ] / 0.4206 = <span class="text-tertiary-fixed font-bold">0.8241</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Bottom Section: Transparent Explainable AI (XAI) Synthesis & Trade-Off Matrix -->
+<section class="w-full bg-surface-container-low p-space-lg rounded shadow-xl flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded bg-primary"></span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Explainable AI (XAI) Synthesis &amp; Trade-Off Matrix</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Multi-paradigm reconciliation layer combining Forward Chaining logic proofs with Mamdani Defuzzification and Bayesian belief vectors.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]">verified</span>
+<span class="font-label-caps text-label-caps text-tertiary-fixed uppercase">Transparent Audit Trail Certified</span>
+</div>
+</div>
+<!-- Synthesis Bento: Left Metrics/Radials, Right Honest Trade-Off Deductions -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+<!-- Left Column: Suitability Breakdown Vectors (5 cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-sm bg-surface-container p-space-md rounded">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider font-bold">Dimensional Suitability Tensors</span>
+<span class="font-data-mono-sm text-data-mono-sm text-outline">Confidence Norm</span>
+</div>
+<!-- Vector 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-data-mono-sm text-data-mono-sm">
+<span class="text-on-surface">Budget Fit (INR 24.85L vs 30.00L Limit)</span>
+<span class="text-primary font-bold">94%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded overflow-hidden">
+<div class="bg-primary h-full" style="width: 94%"></div>
+</div>
+</div>
+<!-- Vector 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-data-mono-sm text-data-mono-sm">
+<span class="text-on-surface">Dynamic Performance (200PS / 380Nm Boost)</span>
+<span class="text-secondary font-bold">92%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded overflow-hidden">
+<div class="bg-secondary h-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- Vector 3 -->
+<div class="flex justify-between items-center font-data-mono-sm text-data-mono-sm">
+<span class="text-on-surface">Terrain &amp; Monsoon Immunity (200mm AWD)</span>
+<span class="text-tertiary-fixed font-bold">98%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full" style="width: 98%"></div>
+</div>
+<!-- Vector 4: Low Score -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-data-mono-sm text-data-mono-sm">
+<span class="text-on-surface">Fuel &amp; TCO Economics (Urban Crawl 8.2 km/l)</span>
+<span class="text-error font-bold">64%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded overflow-hidden">
+<div class="bg-error h-full" style="width: 64%"></div>
+</div>
+</div>
+<!-- Vector 5 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-data-mono-sm text-data-mono-sm">
+<span class="text-on-surface">Safety Telemetry (GNCAP 5-Star + Level 2 ADAS)</span>
+<span class="text-tertiary-fixed font-bold">99%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded overflow-hidden">
+<div class="bg-tertiary-container h-full" style="width: 99%"></div>
+</div>
+</div>
+<div class="mt-space-xs p-space-xs bg-surface-container-lowest rounded flex items-center justify-between text-outline font-data-mono-sm text-data-mono-sm">
+<span>Overall Aggregated Affinity Index:</span>
+<span class="text-primary font-bold text-data-mono-md">89.4 / 100</span>
+</div>
+</div>
+<!-- Right Column: Positive Inductions vs Honest Negative Deductions (7 cols) -->
+<div class="xl:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Positive Deductions Box -->
+<div class="bg-surface-container p-space-md rounded flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-caps text-label-caps uppercase font-bold tracking-wider">Algorithmic Affirmations</span>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="p-space-xs bg-surface-container-lowest rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[16px] mt-0.5">check_circle</span>
+<span class="text-on-surface"><strong>High-Safety Structural Integrity:</strong> Uncompromising 5-Star GNCAP cabin with 7 airbags and standard Level 2 Autonomous Emergency Braking (AEB).</span>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[16px] mt-0.5">check_circle</span>
+<span class="text-on-surface"><strong>Topographic Resilience:</strong> Unladen 200mm clearance guarantees zero underbody strike on severe Bengaluru speed-breakers during monsoon waterlogging.</span>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[16px] mt-0.5">check_circle</span>
+<span class="text-on-surface"><strong>Highway Long-Range Intercity:</strong> mStallion Turbo-petrol produces 380Nm flat torque from 1750 RPM, optimal for safe overtakes with full 7-pax payload.</span>
+</div>
+</div>
+</div>
+<!-- Honest Negative Deductions Box -->
+<div class="bg-surface-container p-space-md rounded flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-label-caps text-label-caps uppercase font-bold tracking-wider">Explicit Systemic Trade-Offs</span>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="p-space-xs bg-surface-container-lowest rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[16px] mt-0.5">cancel</span>
+<span class="text-on-surface"><strong>Heavy Urban Bangalore Fuel Penalty:</strong> Real-world ORR / Silk Board crawl cycles cause fuel economy degradation to 7.8 – 8.8 km/l.</span>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[16px] mt-0.5">cancel</span>
+<span class="text-on-surface"><strong>High KA State Luxury RTO Tax:</strong> Karnataka road taxation adds +₹5.27L to ex-showroom price, pushing close to budget ceiling.</span>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[16px] mt-0.5">cancel</span>
+<span class="text-on-surface"><strong>Tight Urban Turning Radius:</strong> 5.75-meter turning radius increases lock-to-lock maneuver complexity in single-lane residential lanes.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Academic FAI Footnote -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-xs pt-space-xs font-data-mono-sm text-data-mono-sm text-outline">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">school</span>
+<span>Verified against Russell &amp; Norvig AI Standards: Mamdani Continuous Inference + Exact Bayesian Network Propagation.</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-primary font-bold">VehicleIQ FAI Lab Engine #KR-78092</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Client-side Script for Trace Simulation & Export -->
+<script>
+    (function() {
+      const reInferenceBtn = document.getElementById('reInferenceBtn');
+      const exportTraceBtn = document.getElementById('exportTraceBtn');
+
+      if (reInferenceBtn) {
+        reInferenceBtn.addEventListener('click', function() {
+          const originalText = reInferenceBtn.innerHTML;
+          reInferenceBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">rotate_right</span><span>Inferring Graph...</span>';
+          reInferenceBtn.classList.add('opacity-80');
+
+          setTimeout(() => {
+            reInferenceBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Cycle Converged (11.8ms)</span>';
+            reInferenceBtn.classList.remove('opacity-80');
+
+            setTimeout(() => {
+              reInferenceBtn.innerHTML = originalText;
+            }, 2500);
+          }, 650);
+        });
+      }
+
+      if (exportTraceBtn) {
+        exportTraceBtn.addEventListener('click', function() {
+          const traceData = {
+            target: "Mahindra XUV700 AX7L AWD",
+            variantId: "MAH-XUV700-AX7L",
+            framework: "VehicleIQ FAI v4.2",
+            timestamp: new Date().toISOString(),
+            paradigms: {
+              knowledge_representation: {
+                budget_ceiling_inr: 3000000,
+                seating_target: 7,
+                ground_clearance_mm: 200,
+                location: "Karnataka BLR KA-01"
+              },
+              forward_chaining: [
+                { id: "FC-01", fired: true, delta: "+15.0%" },
+                { id: "FC-02", fired: true, delta: "+12.5%" },
+                { id: "FC-03", fired: true, delta: "+9.0%" },
+                { id: "FC-04", fired: false, reason: "Pruned: Vehicle is ICE AWD" }
+              ],
+              fuzzy_sets: {
+                comfort_membership: 0.92,
+                sportiness_membership: 0.78,
+                agility_membership: 0.54,
+                defuzzified_centroid_coa: 0.814
+              },
+              bayesian_network: {
+                prior: 0.380,
+                posterior: 0.824,
+                evidence_count: 4
+              }
+            }
+          };
+
+          const blob = new Blob([JSON.stringify(traceData, null, 2)], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'VehicleIQ_FAI_Trace_MAH_XUV700.json';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="VehicleIQ Minimalist Automotive AI Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XgIZFuux3YHc1zZsCskn0XBTO9BXPkGUysw1PyxCBrxwGLkKsbd9gay3lnhLGDetj3ht0CiFhPMVNmHFHWHGJqKZ6KOyb0tjrSZ7MJlH8AlO4z3B5-veVSbt9uoSwpZimC4lPu3hGLV6-UNK0f5PjBfRwTuhj6fm3pEKbneKbdJxllQxHi2tEPHscQiwbgLxnGDbQWrV_jtgIkBm4FWZhvqGPKORQ8w1s8TVE_kBa9L86DAaz2F-hKcik"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary uppercase">VehicleIQ</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Autonomous automotive decision-support infrastructure powered by algorithmic inference and real-world multi-market telemetry.</p><div class="flex items-center gap-space-xs text-outline font-data-mono-sm text-data-mono-sm"><span class="material-symbols-outlined text-[16px]">verified</span>Certified FAI Level-4 Architecture</div></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-xs">Telemetry Matrix</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="vehicles" href="#">Powertrain Specs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="compare" href="#">Multi-Vehicle Benchmarking</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-reasoning" href="#">Thermal Diagnostics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="discover" href="#">Urban Range Index (Chennai/BLR)</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-xs">Autonomous Core</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-reasoning" href="#">Bayesian Evaluation Engine</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="knowledge-base" href="#">Battery Degradation Models</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="knowledge-base" href="#">TCO Optimization Framework</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="knowledge-base" href="#">Academic Whitepapers</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-space-xs">Credentials &amp; Security</span><span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">ISO/SAE 21434 Compliant</span><span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">FAI Neural Node #09941</span><span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Latency: 14ms (IN-WEST-1)</span><div class="mt-space-sm flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase">Grid Protocol Synced</span></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-lg"><span class="font-data-mono-sm text-data-mono-sm text-outline">© 2025 VehicleIQ AI Labs Inc. All rights reserved.</span><div class="flex items-center gap-space-md"><span class="font-data-mono-sm text-data-mono-sm text-outline">Privacy Policy</span><span class="font-data-mono-sm text-data-mono-sm text-outline">Telemetry Terms</span><span class="font-data-mono-sm text-data-mono-sm text-outline">API Status</span></div></div></div></footer></body></html>

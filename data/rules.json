@@ -1,0 +1,474 @@
+{
+  "_metadata": {
+    "description": "Forward chaining rules for the AI vehicle selection system. Each rule has conditions and conclusions. The engine fires rules repeatedly until no new facts are derived.",
+    "version": "1.0"
+  },
+  "rules": [
+    {
+      "id": "R01",
+      "description": "Low daily usage classification",
+      "conditions": [
+        {"fact": "daily_distance", "operator": "<=", "value": 15}
+      ],
+      "conclusions": [
+        {"fact": "daily_usage", "value": "low"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R02",
+      "description": "Medium daily usage classification",
+      "conditions": [
+        {"fact": "daily_distance", "operator": ">", "value": 15},
+        {"fact": "daily_distance", "operator": "<=", "value": 35}
+      ],
+      "conclusions": [
+        {"fact": "daily_usage", "value": "medium"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R03",
+      "description": "High daily usage classification",
+      "conditions": [
+        {"fact": "daily_distance", "operator": ">", "value": 35},
+        {"fact": "daily_distance", "operator": "<=", "value": 60}
+      ],
+      "conclusions": [
+        {"fact": "daily_usage", "value": "high"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R04",
+      "description": "Very high daily usage classification",
+      "conditions": [
+        {"fact": "daily_distance", "operator": ">", "value": 60}
+      ],
+      "conclusions": [
+        {"fact": "daily_usage", "value": "very_high"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R05",
+      "description": "Urban driving environment",
+      "conditions": [
+        {"fact": "driving_environment", "operator": "==", "value": "city"}
+      ],
+      "conclusions": [
+        {"fact": "urban_usage", "value": "high"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R06",
+      "description": "Highway driving environment",
+      "conditions": [
+        {"fact": "driving_environment", "operator": "==", "value": "highway"}
+      ],
+      "conclusions": [
+        {"fact": "highway_usage", "value": "high"},
+        {"fact": "urban_usage", "value": "low"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R07",
+      "description": "Mixed driving environment",
+      "conditions": [
+        {"fact": "driving_environment", "operator": "==", "value": "mixed"}
+      ],
+      "conclusions": [
+        {"fact": "urban_usage", "value": "medium"},
+        {"fact": "highway_usage", "value": "medium"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R08",
+      "description": "Home charging potential from private house parking",
+      "conditions": [
+        {"fact": "parking", "operator": "==", "value": "private_house"}
+      ],
+      "conclusions": [
+        {"fact": "home_charging_potential", "value": "high"},
+        {"fact": "parking_convenience", "value": "high"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R09",
+      "description": "Home charging potential from dedicated apartment parking",
+      "conditions": [
+        {"fact": "parking", "operator": "==", "value": "apartment_with_dedicated"}
+      ],
+      "conclusions": [
+        {"fact": "home_charging_potential", "value": "medium"},
+        {"fact": "parking_convenience", "value": "medium"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R10",
+      "description": "Limited charging potential from apartment without dedicated parking",
+      "conditions": [
+        {"fact": "parking", "operator": "==", "value": "apartment_without_dedicated"}
+      ],
+      "conclusions": [
+        {"fact": "home_charging_potential", "value": "low"},
+        {"fact": "parking_convenience", "value": "low"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R11",
+      "description": "No home charging from street parking",
+      "conditions": [
+        {"fact": "parking", "operator": "==", "value": "street_parking"}
+      ],
+      "conclusions": [
+        {"fact": "home_charging_potential", "value": "very_low"},
+        {"fact": "parking_convenience", "value": "very_low"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R12",
+      "description": "Uncertain charging feasibility when parking has low home charging potential and charging knowledge is unknown",
+      "conditions": [
+        {"fact": "home_charging_potential", "operator": "==", "value": "low"},
+        {"fact": "charging_knowledge", "operator": "==", "value": "unknown"}
+      ],
+      "conclusions": [
+        {"fact": "charging_feasibility", "value": "uncertain"}
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R13",
+      "description": "Uncertain charging feasibility from very low home charging potential",
+      "conditions": [
+        {"fact": "home_charging_potential", "operator": "==", "value": "very_low"}
+      ],
+      "conclusions": [
+        {"fact": "charging_feasibility", "value": "unlikely"}
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R14",
+      "description": "Good charging feasibility from high home charging potential",
+      "conditions": [
+        {"fact": "home_charging_potential", "operator": "==", "value": "high"},
+        {"fact": "charging_knowledge", "operator": "!=", "value": "unavailable"}
+      ],
+      "conclusions": [
+        {"fact": "charging_feasibility", "value": "likely"}
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R15",
+      "description": "Confirmed charging available",
+      "conditions": [
+        {"fact": "charging_knowledge", "operator": "==", "value": "available"}
+      ],
+      "conclusions": [
+        {"fact": "charging_feasibility", "value": "confirmed"}
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R16",
+      "description": "Beginner experience classification",
+      "conditions": [
+        {"fact": "experience", "operator": "==", "value": "beginner"}
+      ],
+      "conclusions": [
+        {"fact": "experience_level", "value": "beginner"},
+        {"fact": "needs_easy_vehicle", "value": "true"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R17",
+      "description": "Intermediate experience classification",
+      "conditions": [
+        {"fact": "experience", "operator": "==", "value": "intermediate"}
+      ],
+      "conclusions": [
+        {"fact": "experience_level", "value": "intermediate"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R18",
+      "description": "Experienced driver classification",
+      "conditions": [
+        {"fact": "experience", "operator": "==", "value": "experienced"}
+      ],
+      "conclusions": [
+        {"fact": "experience_level", "value": "experienced"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R19",
+      "description": "Strong manual transmission preference",
+      "conditions": [
+        {"fact": "transmission_preference", "operator": "==", "value": "manual"}
+      ],
+      "conclusions": [
+        {"fact": "manual_preference", "value": "strong"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R20",
+      "description": "Strong automatic transmission preference",
+      "conditions": [
+        {"fact": "transmission_preference", "operator": "==", "value": "automatic"}
+      ],
+      "conclusions": [
+        {"fact": "auto_preference", "value": "strong"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R21",
+      "description": "Unknown transmission preference - consider both",
+      "conditions": [
+        {"fact": "transmission_preference", "operator": "==", "value": "unknown"}
+      ],
+      "conclusions": [
+        {"fact": "transmission_flexible", "value": "true"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R22",
+      "description": "Beginner with unknown transmission should consider automatic",
+      "conditions": [
+        {"fact": "experience_level", "operator": "==", "value": "beginner"},
+        {"fact": "transmission_flexible", "operator": "==", "value": "true"}
+      ],
+      "conclusions": [
+        {"fact": "auto_transmission_suggested", "value": "true"}
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R23",
+      "description": "High urban usage with high daily usage",
+      "conditions": [
+        {"fact": "urban_usage", "operator": "==", "value": "high"},
+        {"fact": "daily_usage", "operator": "in", "value": ["high", "very_high"]}
+      ],
+      "conclusions": [
+        {"fact": "urban_high_usage", "value": "true"}
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R24",
+      "description": "Budget-conscious user with budget segment",
+      "conditions": [
+        {"fact": "budget_segment", "operator": "==", "value": "budget"}
+      ],
+      "conclusions": [
+        {"fact": "price_sensitivity", "value": "high"},
+        {"fact": "used_market_relevant", "value": "true"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R25",
+      "description": "Medium budget segment",
+      "conditions": [
+        {"fact": "budget_segment", "operator": "==", "value": "medium"}
+      ],
+      "conclusions": [
+        {"fact": "price_sensitivity", "value": "medium"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R26",
+      "description": "High budget segment",
+      "conditions": [
+        {"fact": "budget_segment", "operator": "==", "value": "high"}
+      ],
+      "conclusions": [
+        {"fact": "price_sensitivity", "value": "low"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R27",
+      "description": "Frequent long-distance travel increases highway importance",
+      "conditions": [
+        {"fact": "long_distance_frequency", "operator": "==", "value": "frequent"}
+      ],
+      "conclusions": [
+        {"fact": "highway_importance", "value": "high"},
+        {"fact": "range_importance", "value": "high"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R28",
+      "description": "Occasional long-distance travel",
+      "conditions": [
+        {"fact": "long_distance_frequency", "operator": "==", "value": "occasional"}
+      ],
+      "conclusions": [
+        {"fact": "highway_importance", "value": "medium"},
+        {"fact": "range_importance", "value": "medium"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R29",
+      "description": "Rare long-distance travel",
+      "conditions": [
+        {"fact": "long_distance_frequency", "operator": "==", "value": "rare"}
+      ],
+      "conclusions": [
+        {"fact": "highway_importance", "value": "low"},
+        {"fact": "range_importance", "value": "low"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R30",
+      "description": "First-time owner flag",
+      "conditions": [
+        {"fact": "first_time_owner", "operator": "==", "value": true}
+      ],
+      "conclusions": [
+        {"fact": "ownership_experience", "value": "none"},
+        {"fact": "needs_easy_vehicle", "value": "true"}
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R31",
+      "description": "Environment-conscious user profile",
+      "conditions": [
+        {"fact": "environmental_preference", "operator": "in", "value": ["high", "very_high"]}
+      ],
+      "conclusions": [
+        {"fact": "eco_conscious", "value": "true"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R32",
+      "description": "Large family seating requirement",
+      "conditions": [
+        {"fact": "seating_requirement", "operator": ">", "value": 5}
+      ],
+      "conclusions": [
+        {"fact": "needs_large_vehicle", "value": "true"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R33",
+      "description": "High ground clearance need",
+      "conditions": [
+        {"fact": "ground_clearance_need", "operator": "==", "value": "high"}
+      ],
+      "conclusions": [
+        {"fact": "suv_preference", "value": "true"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R34",
+      "description": "Diesel advantage for high daily usage and highway driving",
+      "conditions": [
+        {"fact": "daily_usage", "operator": "in", "value": ["high", "very_high"]},
+        {"fact": "highway_usage", "operator": "in", "value": ["high", "medium"]}
+      ],
+      "conclusions": [
+        {"fact": "diesel_advantage", "value": "true"}
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R35",
+      "description": "EV advantage for urban usage with charging",
+      "conditions": [
+        {"fact": "urban_high_usage", "operator": "==", "value": "true"},
+        {"fact": "charging_feasibility", "operator": "in", "value": ["confirmed", "likely"]}
+      ],
+      "conclusions": [
+        {"fact": "ev_strong_candidate", "value": "true"}
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R36",
+      "description": "CNG advantage for high daily city commute and running cost importance",
+      "conditions": [
+        {"fact": "daily_usage", "operator": "in", "value": ["medium", "high", "very_high"]},
+        {"fact": "urban_usage", "operator": "==", "value": "high"},
+        {"fact": "running_cost_importance", "operator": "in", "value": ["high", "very_high"]}
+      ],
+      "conclusions": [
+        {"fact": "cng_advantage", "value": "true"}
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R37",
+      "description": "CNG recommendation for price-sensitive city commuters",
+      "conditions": [
+        {"fact": "price_sensitivity", "operator": "==", "value": "high"},
+        {"fact": "fuel_station_access", "operator": "in", "value": ["easy", "moderate"]}
+      ],
+      "conclusions": [
+        {"fact": "cng_candidate", "value": "true"}
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R38",
+      "description": "CNG boot space compromise flag",
+      "conditions": [
+        {"fact": "cng_advantage", "operator": "==", "value": "true"},
+        {"fact": "boot_space_need", "operator": "==", "value": "large"}
+      ],
+      "conclusions": [
+        {"fact": "boot_space_compromise_warning", "value": "true"}
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R39",
+      "description": "Pre-owned / used car advantage for budget sensitive buyers",
+      "conditions": [
+        {"fact": "budget_segment", "operator": "==", "value": "budget"},
+        {"fact": "vehicle_condition_preference", "operator": "in", "value": ["prefer_used", "no_preference"]}
+      ],
+      "conclusions": [
+        {"fact": "used_car_recommended", "value": "true"}
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R40",
+      "description": "First-time driver learning vehicle preference for used market",
+      "conditions": [
+        {"fact": "first_time_owner", "operator": "==", "value": true},
+        {"fact": "vehicle_condition_preference", "operator": "==", "value": "prefer_used"}
+      ],
+      "conclusions": [
+        {"fact": "ideal_learning_vehicle", "value": "true"}
+      ],
+      "priority": 3
+    }
+  ]
+}

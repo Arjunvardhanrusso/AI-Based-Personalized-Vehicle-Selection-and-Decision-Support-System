@@ -1,0 +1,79 @@
+{
+  "_metadata": {
+    "description": "Fuzzy set definitions with trapezoidal/triangular membership functions. Each set maps a linguistic variable to membership parameters [a, b, c, d] for trapezoidal or [a, b, c] for triangular functions.",
+    "version": "1.0"
+  },
+  "fuzzy_sets": {
+    "daily_distance": {
+      "unit": "km",
+      "sets": {
+        "low":       {"type": "trapezoidal", "params": [0, 0, 8, 18]},
+        "medium":    {"type": "trapezoidal", "params": [10, 18, 28, 40]},
+        "high":      {"type": "trapezoidal", "params": [30, 40, 55, 70]},
+        "very_high": {"type": "trapezoidal", "params": [55, 70, 150, 150]}
+      }
+    },
+    "budget": {
+      "unit": "INR_lakhs",
+      "sets": {
+        "low":     {"type": "trapezoidal", "params": [0, 0, 4, 7]},
+        "medium":  {"type": "trapezoidal", "params": [5, 7, 12, 16]},
+        "high":    {"type": "trapezoidal", "params": [12, 16, 22, 28]},
+        "premium": {"type": "trapezoidal", "params": [22, 28, 100, 100]}
+      }
+    },
+    "running_cost_per_km": {
+      "unit": "INR",
+      "sets": {
+        "very_low": {"type": "trapezoidal", "params": [0, 0, 1.0, 2.5]},
+        "low":      {"type": "trapezoidal", "params": [1.0, 2.0, 3.5, 4.5]},
+        "medium":   {"type": "trapezoidal", "params": [3.5, 4.5, 5.5, 6.5]},
+        "high":     {"type": "trapezoidal", "params": [5.5, 6.5, 10, 10]}
+      }
+    },
+    "importance": {
+      "unit": "scale_0_1",
+      "sets": {
+        "not_important":     {"type": "trapezoidal", "params": [0, 0, 0.1, 0.3]},
+        "slightly_important":{"type": "trapezoidal", "params": [0.15, 0.25, 0.35, 0.5]},
+        "important":         {"type": "trapezoidal", "params": [0.35, 0.5, 0.65, 0.8]},
+        "very_important":    {"type": "trapezoidal", "params": [0.7, 0.8, 1.0, 1.0]}
+      }
+    },
+    "performance_need": {
+      "unit": "scale_0_1",
+      "sets": {
+        "low":    {"type": "trapezoidal", "params": [0, 0, 0.2, 0.4]},
+        "medium": {"type": "trapezoidal", "params": [0.25, 0.4, 0.6, 0.75]},
+        "high":   {"type": "trapezoidal", "params": [0.6, 0.75, 1.0, 1.0]}
+      }
+    },
+    "boot_space_need": {
+      "unit": "litres",
+      "sets": {
+        "small":  {"type": "trapezoidal", "params": [0, 0, 200, 300]},
+        "medium": {"type": "trapezoidal", "params": [200, 300, 400, 500]},
+        "large":  {"type": "trapezoidal", "params": [400, 500, 800, 800]}
+      }
+    },
+    "ground_clearance_need": {
+      "unit": "mm",
+      "sets": {
+        "low":    {"type": "trapezoidal", "params": [0, 0, 150, 170]},
+        "medium": {"type": "trapezoidal", "params": [155, 170, 190, 200]},
+        "high":   {"type": "trapezoidal", "params": [185, 200, 250, 250]}
+      }
+    }
+  },
+  "linguistic_to_numeric": {
+    "very_low": 0.1,
+    "low": 0.25,
+    "medium": 0.5,
+    "high": 0.75,
+    "very_high": 0.9,
+    "not_important": 0.1,
+    "slightly_important": 0.3,
+    "important": 0.6,
+    "very_important": 0.9
+  }
+}
